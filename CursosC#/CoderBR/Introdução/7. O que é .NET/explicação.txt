@@ -1,0 +1,25 @@
+﻿.NET é um framework de software desenvolvido pela Microsoft que fornece um ambiente de execução e ferramentas para desenvolvimento, implantação e execução de aplicativos. Ele permite que os desenvolvedores criem uma variedade de tipos de aplicativos, desde aplicativos de desktop e aplicativos web até aplicativos móveis e serviços em nuvem. O termo ".NET" é frequentemente usado de maneira abrangente para se referir a várias tecnologias relacionadas dentro do ecossistema da Microsoft.
+
+O .NET oferece uma plataforma unificada para desenvolvimento de software, incluindo:
+
+Common Language Runtime (CLR): É a parte central do .NET que gerencia a execução de código. Ele oferece suporte a recursos como gerenciamento de memória, coleta de lixo, segurança, carregamento de assemblies, entre outros.
+
+Biblioteca de Classes .NET (FCL - .NET Framework Class Library): É um conjunto de classes e tipos pré-construídos que os desenvolvedores podem usar para criar aplicativos. Ele fornece uma ampla variedade de funcionalidades, desde manipulação de strings até acesso a bancos de dados e operações de rede.
+
+Linguagens de Programação: O .NET suporta várias linguagens de programação, incluindo C#, Visual Basic.NET, F#, C++/CLI e outras. Os aplicativos escritos em diferentes linguagens podem coexistir e interagir no mesmo ecossistema.
+
+ASP.NET: Uma estrutura para desenvolvimento de aplicativos web, permitindo a criação de sites e serviços web dinâmicos usando tecnologias como ASP.NET Web Forms e ASP.NET MVC.
+
+WinForms e WPF: Bibliotecas para desenvolvimento de aplicativos de desktop, oferecendo interfaces gráficas ricas para aplicativos Windows.
+
+Entity Framework: Uma tecnologia de mapeamento objeto-relacional (ORM) que facilita a interação com bancos de dados relacionais.
+
+ASP.NET Core: Uma versão mais recente do ASP.NET que é multiplataforma e otimizada para desenvolvimento web moderno e escalável.
+
+.NET Core: Uma implementação multiplataforma e de código aberto do .NET, que permite desenvolvimento para Windows, macOS e Linux.
+
+Azure Services: Integração com a plataforma de nuvem da Microsoft, permitindo a criação de aplicativos escaláveis e serviços baseados em nuvem.
+
+Xamarin: Uma plataforma para desenvolvimento de aplicativos móveis para iOS, Android e outras plataformas, usando C# e .NET.
+
+O .NET é amplamente utilizado na indústria de software e é uma escolha popular para o desenvolvimento de aplicativos Windows, web e móveis. Ele oferece ferramentas poderosas para desenvolvedores criar aplicações eficientes, seguras e de alto desempenho. Além disso, o .NET continua evoluindo com o tempo, incorporando novas tecnologias e recursos para atender às demandas em constante mudança do mundo do desenvolvimento de software.
