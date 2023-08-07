@@ -1,0 +1,21 @@
+﻿O Common Language Runtime (CLR) é um componente fundamental do ambiente .NET Framework e .NET Core desenvolvido pela Microsoft. Ele é responsável pela execução e gerenciamento de código no ambiente .NET. O CLR oferece um conjunto de serviços essenciais para que os programas escritos em diferentes linguagens de programação possam ser executados em um ambiente comum e interoperável.
+
+Aqui estão algumas das principais funções e características do Common Language Runtime:
+
+Gerenciamento de Memória e Coleta de Lixo: O CLR cuida da alocação e liberação de memória para objetos em tempo de execução. Ele também realiza a coleta automática de lixo, ou "garbage collection", para recuperar memória de objetos não utilizados, ajudando a evitar vazamentos de memória.
+
+Compilação Just-in-Time (JIT): O código-fonte das linguagens de programação compatíveis com o .NET é compilado em um formato intermediário chamado CIL (Common Intermediate Language) ou IL (Intermediate Language). O CLR realiza a compilação Just-in-Time, convertendo o código IL em código nativo específico da plataforma durante a execução.
+
+Segurança e Gerenciamento de Acesso a Recursos: O CLR implementa políticas de segurança que controlam o acesso de código a recursos do sistema, como arquivos, registros e redes. Isso ajuda a proteger o sistema de potenciais ameaças de segurança.
+
+Gerenciamento de Exceções: O CLR lida com exceções lançadas durante a execução do programa, permitindo o tratamento adequado de erros e a recuperação controlada de situações excepcionais.
+
+Interoperabilidade de Linguagens: O CLR permite que diferentes linguagens de programação escritas para a plataforma .NET possam interagir e se comunicar de maneira eficiente, usando os mesmos tipos e objetos.
+
+Carregamento de Assemblies: O CLR carrega e gerencia assemblies (unidades fundamentais de reutilização e implantação em .NET), garantindo que as dependências sejam resolvidas corretamente e que o código seja carregado conforme necessário.
+
+Tempo de Execução Baseado em Threads: O CLR permite a execução simultânea de várias tarefas por meio de threads, que são gerenciados e sincronizados pelo próprio CLR.
+
+Suporte a Reflexão: O CLR permite a introspecção de metadados em tempo de execução, o que facilita a criação de ferramentas de depuração, inspeção e geração automática de código.
+
+O Common Language Runtime é uma parte essencial do ambiente .NET, garantindo que aplicativos escritos em várias linguagens possam ser executados de forma eficiente, segura e consistente. Ele desempenha um papel fundamental na abstração da complexidade subjacente do sistema operacional e da arquitetura de hardware, permitindo que os desenvolvedores se concentrem na lógica do aplicativo e na resolução de problemas.
