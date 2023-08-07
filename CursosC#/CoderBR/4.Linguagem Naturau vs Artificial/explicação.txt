@@ -1,0 +1,30 @@
+﻿LINGUAGEM NATURAL VS LNGUAGEM ARTIFICIAL
+
+
+Linguagem natural e linguagem artificial são dois conceitos relacionados à comunicação e à forma como os seres humanos interagem com sistemas de comunicação, como linguagens de programação e sistemas de inteligência artificial. Vamos entender melhor cada um desses termos e suas diferenças:
+
+Linguagem Natural:
+A linguagem natural refere-se à forma de comunicação usada pelos seres humanos para se expressar verbalmente ou por escrito. É a linguagem que usamos no dia a dia para conversar, escrever textos, fazer perguntas e expressar nossos pensamentos e sentimentos. Ela evoluiu ao longo do tempo como uma forma complexa e rica de comunicação, incorporando nuances, ambiguidades e contextos que podem ser difíceis de compreender e analisar para máquinas. Exemplos de linguagem natural incluem o inglês, o português, o espanhol, entre outras línguas humanas.
+
+Linguagem Artificial:
+A linguagem artificial, por outro lado, refere-se a sistemas de comunicação criados pelo ser humano, muitas vezes com o propósito de interagir com máquinas ou sistemas automatizados. Essas linguagens são projetadas com regras específicas e estruturas definidas para permitir que as máquinas compreendam e processem a informação de maneira eficiente. As linguagens de programação, como Python, Java e C++, são exemplos de linguagens artificiais que os desenvolvedores utilizam para escrever códigos que instruem computadores a executar tarefas específicas.
+
+Diferenças:
+
+Origem:
+
+A linguagem natural é uma forma de comunicação inata aos seres humanos, que se desenvolveu ao longo da evolução e da história da linguagem.
+A linguagem artificial é criada pelo homem para atender a necessidades específicas de comunicação com máquinas ou sistemas.
+Complexidade:
+
+A linguagem natural é extremamente complexa, cheia de nuances, ambiguidades, trocadilhos e significados contextuais.
+A linguagem artificial é projetada com regras e estruturas mais rígidas, visando a clareza e a precisão na comunicação com máquinas.
+Compreensão por Máquinas:
+
+As máquinas têm dificuldade em compreender a linguagem natural devido à sua complexidade e falta de estrutura rígida.
+As linguagens artificiais são projetadas para serem facilmente compreendidas e processadas por máquinas, permitindo a automação de tarefas.
+Flexibilidade:
+
+A linguagem natural é altamente flexível e adaptável, permitindo a expressão de uma ampla variedade de ideias e emoções.
+A linguagem artificial tende a ser mais restrita em sua aplicação, focando-se em transmitir instruções precisas e lógicas.
+Em resumo, a linguagem natural é a forma de comunicação natural entre seres humanos, enquanto a linguagem artificial é criada pelo homem para interagir com máquinas e sistemas automatizados. Cada uma tem suas próprias características e propósitos específicos, sendo utilizada em contextos diferentes.
