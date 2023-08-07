@@ -1,0 +1,21 @@
+﻿Uma estrutura de dados é uma organização particular de dados em um computador que permite a eficiente armazenagem, acesso e manipulação desses dados. Em outras palavras, é uma maneira de organizar informações de forma apropriada para facilitar a resolução de problemas específicos ou a execução de tarefas complexas de maneira eficiente.
+
+As estruturas de dados fornecem um conjunto de operações definidas para trabalhar com os dados armazenados, como inserção, exclusão, pesquisa e atualização. A escolha da estrutura de dados certa para uma determinada tarefa pode ter um grande impacto no desempenho e na eficiência do programa ou algoritmo.
+
+Existem várias estruturas de dados comuns, cada uma com suas próprias características e aplicações:
+
+Arrays: Uma coleção ordenada de elementos do mesmo tipo, acessados por meio de índices. Arrays são bons para acesso direto aos elementos, mas têm tamanho fixo.
+
+Listas Ligadas (Linked Lists): Uma sequência de elementos chamados nós, onde cada nó mantém um valor e uma referência ao próximo nó na sequência. Existem vários tipos de listas ligadas, como listas simplesmente ligadas e listas duplamente ligadas.
+
+Pilhas (Stacks): Uma estrutura linear de dados em que a inserção e a remoção de elementos ocorrem no topo. O último elemento a ser inserido é o primeiro a ser removido (LIFO - Last In, First Out).
+
+Filas (Queues): Uma estrutura linear em que a inserção ocorre no final e a remoção ocorre no início. O primeiro elemento a ser inserido é o primeiro a ser removido (FIFO - First In, First Out).
+
+Árvores: Estruturas hierárquicas que consistem em nós interconectados. Existem vários tipos de árvores, como árvores binárias, árvores de busca binária, árvores AVL, entre outras.
+
+Grafos: Conjunto de vértices e arestas que os conectam, permitindo representar relações complexas entre elementos.
+
+Tabelas Hash: Estruturas que associam chaves a valores, permitindo acesso rápido aos valores com base em suas chaves.
+
+A escolha da estrutura de dados depende das características do problema que você está tentando resolver e das operações que você precisa realizar com os dados. O conhecimento das diferentes estruturas de dados e suas propriedades é fundamental para projetar algoritmos eficientes e solucionar problemas de maneira otimizada.
