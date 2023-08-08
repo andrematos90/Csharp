@@ -1,2 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+using System.Collections.Generic;
+
+using CoderBR.Fundamentos;
+
+namespace CursoCSharp {
+    class Program {
+        static void Main(string[] args) {
+            var central = new CentralDeExercicios(new Dictionary<string, Action>() {
+                {"Primeiro Programa - Fundamentos", PrimeiroPrograma.Executar},
+            });
+
+            central.SelecionarEExecutar();
+        }
+    }
+}

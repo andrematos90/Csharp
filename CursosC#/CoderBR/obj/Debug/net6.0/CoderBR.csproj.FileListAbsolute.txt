@@ -1,0 +1,15 @@
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CoderBR\bin\Debug\net6.0\CoderBR.exe
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CoderBR\bin\Debug\net6.0\CoderBR.deps.json
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CoderBR\bin\Debug\net6.0\CoderBR.runtimeconfig.json
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CoderBR\bin\Debug\net6.0\CoderBR.dll
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CoderBR\bin\Debug\net6.0\CoderBR.pdb
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CoderBR\obj\Debug\net6.0\CoderBR.csproj.AssemblyReference.cache
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CoderBR\obj\Debug\net6.0\CoderBR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CoderBR\obj\Debug\net6.0\CoderBR.AssemblyInfoInputs.cache
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CoderBR\obj\Debug\net6.0\CoderBR.AssemblyInfo.cs
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CoderBR\obj\Debug\net6.0\CoderBR.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CoderBR\obj\Debug\net6.0\CoderBR.dll
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CoderBR\obj\Debug\net6.0\refint\CoderBR.dll
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CoderBR\obj\Debug\net6.0\CoderBR.pdb
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CoderBR\obj\Debug\net6.0\CoderBR.genruntimeconfig.cache
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CoderBR\obj\Debug\net6.0\ref\CoderBR.dll
