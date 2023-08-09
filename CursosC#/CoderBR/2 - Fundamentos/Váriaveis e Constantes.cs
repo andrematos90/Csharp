@@ -1,8 +1,17 @@
 ﻿using System;
 
-public class Class1
+
+namespace CoderBR.Fundamentos
 {
-	public Class1()
-	{
-	}
+    class VariaveisEConstantes
+    {
+        public static void Executar()
+        {
+            double raio = 4.5;
+            const double PI = 3.14;
+            double area = PI * raio * raio;
+            Console.WriteLine("AREA:" + area);
+
+        }
+    }
 }
