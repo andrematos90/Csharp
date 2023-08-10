@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-
 using CoderBR.Fundamentos;
 
 namespace CursoCSharp {
@@ -9,7 +8,8 @@ namespace CursoCSharp {
             var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Primeiro Programa - Fundamentos", PrimeiroPrograma.Executar},
                 { "Comentários - Fundamentos", Comentarios.Executar},
-                { "Variáveis e Constantes - Fundamentos", VariaveisEConstantes.Executar},
+                { "Variáveis e Constantes - Fundamentos", VariaveisEConstantes.Executar}, 
+                { "Inferência de Tipos - Fundamentos", Inferência_de_Tipo.Executar},
             });
 
             central.SelecionarEExecutar();
