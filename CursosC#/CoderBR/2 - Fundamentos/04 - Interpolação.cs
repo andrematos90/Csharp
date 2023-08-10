@@ -58,4 +58,4 @@ Console.WriteLine(mensagem);
 
 Nesse exemplo, {valor:C2} formata o valor da variável valor como uma moeda com duas casas decimais.
 
-Em resumo, a interpolação de strings em C# é uma maneira eficaz e legível de criar strings formatadas que incorporam valores de variáveis e expressões de forma direta.
+Em resumo, a interpolação de strings em C# é uma maneira eficaz e legível de criar strings formatadas que incorporam valores de variáveis e expressões de forma direta.*/
