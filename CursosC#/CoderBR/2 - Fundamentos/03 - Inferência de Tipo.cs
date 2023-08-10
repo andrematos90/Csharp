@@ -38,3 +38,4 @@ No exemplo acima, o compilador é capaz de inferir os tipos das variáveis numer
 A inferência de tipos pode tornar o código mais conciso e legível, especialmente em situações onde o tipo da variável é óbvio pelo contexto. No entanto, é importante usá-la com moderação e garantir que o código permaneça claro e compreensível para outros desenvolvedores.
 
 Lembre-se de que a inferência de tipos é aplicada apenas no momento da compilação e não afeta o desempenho ou o comportamento em tempo de execução do programa.
+*/
