@@ -66,5 +66,5 @@ numeros.Add(42); // Add é um método da classe List<T>
 
 
 A notação de ponto é uma maneira essencial de interagir com os membros de tipos em C# e é amplamente usada ao criar e manipular objetos. Ela permite acesso direto aos membros públicos de um tipo e é uma das bases da programação orientada a objetos, permitindo a criação de hierarquias de classes e a composição de objetos complexos.
-
+*/
 
