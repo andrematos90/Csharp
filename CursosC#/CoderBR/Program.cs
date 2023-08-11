@@ -12,7 +12,7 @@ namespace CursoCSharp {
                 { "Inferência de Tipos - Fundamentos", Inferência_de_Tipo.Executar},
                 {"Interpolação de Strings - Fundamentos", Interpolação_de_Strings.Executar},
                 {"Notação Ponto - Fundamentos", Notacao_Ponto.Executar},
-                {"Lendo Dados no Console - Fundamentos", Lendo_Dados_no_Console.Executar },
+                {"Formatação de Números - Fundamentos", Formatando_Numeros .Executar},
             });
 
             central.SelecionarEExecutar();
