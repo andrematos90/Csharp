@@ -51,7 +51,7 @@ namespace CoderBR.Fundamentos
 
             Console.Write("Digite o Segundo número: ");
             int.TryParse(Console.ReadLine(), out int numeroInteiro2);
-            Console.WriteLine("REsultado 2: {0}", numeroInteiro2);
+            Console.WriteLine("Resultado 2: {0}", numeroInteiro2);
 
 
 
