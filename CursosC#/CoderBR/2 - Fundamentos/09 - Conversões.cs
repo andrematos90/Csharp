@@ -127,7 +127,7 @@ int intResult = Convert.ToInt32(intString);
 
 A classe Convert lida automaticamente com exceções que podem ocorrer durante as conversões, como quando um valor não pode ser convertido para o tipo desejado. Nessas situações, uma exceção é lançada, como por exemplo, FormatException ou InvalidCastException.
 
-Lembre-se de que a classe Convert é útil para conversões simples e diretas entre tipos primitivos. Para conversões mais complexas ou personalizadas, você pode precisar de abordagens diferentes, como o uso de Parse ou conversões explícitas entre tipos.
+Lembre-se de que a classe Convert é útil para conversões simples e diretas entre tipos primitivos. Para conversões mais complexas ou personalizadas, você pode precisar de abordagens diferentes, como o uso de Parse ou conversões explícitas entre tipos.*/
 
 
 
