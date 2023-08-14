@@ -19,6 +19,7 @@ namespace CursoCSharp {
                 {"Operadores Lógicos - Fundamentos", Operadores_Logicos.Executar },
                 {"Operadores de Atribuição - Fundamentos", Operadores_DeAtribuicao.Executar },
                 {"Operadores Unários - Fundamentos", Operadores_Unarios.Executar },
+                {"Operador Ternário - Fundamentos", Operador_Ternario.Executar },
 
             });
 
