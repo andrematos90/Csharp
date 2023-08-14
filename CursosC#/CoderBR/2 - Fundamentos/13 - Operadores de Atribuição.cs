@@ -88,7 +88,7 @@ string defaultCity = "New York";
 string selectedCity = city ?? defaultCity; // 'selectedCity' receberá "New York" porque 'city' é null
 
 Esses operadores de atribuição são ferramentas poderosas para tornar seu código mais conciso e legível, permitindo que você execute operações de atribuição e cálculos em uma única linha de código. 
-
+*/
 
 
 
