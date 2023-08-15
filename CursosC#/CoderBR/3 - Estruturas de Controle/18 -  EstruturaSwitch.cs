@@ -94,4 +94,4 @@ switch (diaDaSemana)
 
 Neste exemplo, o programa avalia o valor da variável diaDaSemana e imprime o nome correspondente do dia da semana. Se o valor não corresponder a nenhum dos casos, ele imprimirá "Dia inválido".
 
-A estrutura switch é uma maneira eficiente e legível de lidar com múltiplas opções de decisão com base no valor de uma única expressão.
+A estrutura switch é uma maneira eficiente e legível de lidar com múltiplas opções de decisão com base no valor de uma única expressão.*/
