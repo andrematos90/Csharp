@@ -40,7 +40,7 @@ Aqui está uma explicação detalhada da estrutura foreach em C#:
 
 A palavra-chave foreach é seguida por um par de parênteses (). Dentro desses parênteses, você especifica o tipo da variável que irá armazenar cada elemento da coleção, seguido de um nome para essa variável.
 
-Após os parênteses, você coloca a palavra-chave in seguida da coleção sobre a qual você deseja iterar.
+Após, você coloca a palavra-chave in seguida da coleção sobre a qual você deseja iterar.
 
 O bloco de código dentro das chaves {} é executado para cada elemento na coleção.
 
