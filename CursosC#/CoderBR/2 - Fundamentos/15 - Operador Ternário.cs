@@ -38,4 +38,4 @@ Console.WriteLine(mensagem); // Saída: É maior de idade
 
 Neste exemplo, a condição idade >= 18 é avaliada. Se a condição for verdadeira, a expressão após o ? será executada, e o resultado será atribuído à variável mensagem. Se a condição for falsa, a expressão após o : será executada e seu resultado será atribuído à variável mensagem.
 
-O operador ternário é útil para simplificar o código quando você precisa tomar uma decisão simples. No entanto, lembre-se de que ele pode se tornar difícil de ler se for usado em expressões complexas. Use-o com moderação e certifique-se de que o código resultante ainda seja claro para quem o lê.
+O operador ternário é útil para simplificar o código quando você precisa tomar uma decisão simples. No entanto, lembre-se de que ele pode se tornar difícil de ler se for usado em expressões complexas. Use-o com moderação e certifique-se de que o código resultante ainda seja claro para quem o lê.*/
