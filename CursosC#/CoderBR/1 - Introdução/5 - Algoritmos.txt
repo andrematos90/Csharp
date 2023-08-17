@@ -8,6 +8,7 @@ Saída: Um algoritmo produz uma saída, que é o resultado da execução das ins
 
 Precisão: Os passos de um algoritmo devem ser descritos de forma precisa e clara, sem ambiguidades. Cada passo deve ser suficientemente detalhado para que qualquer pessoa (ou máquina) possa seguir as instruções exatamente como estão.
 
+
 Finitude: Um algoritmo deve ser finito, o que significa que ele deve ter um número definido de passos e eventualmente chegar a uma conclusão em um tempo razoável.
 
 Eficiência: Algoritmos eficientes são projetados para resolver problemas de maneira rápida e com o uso mínimo de recursos, como tempo de processamento e memória.
