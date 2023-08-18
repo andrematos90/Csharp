@@ -7,7 +7,7 @@ namespace CursoCSharp {
     class Program {
         static void Main(string[] args) {
             var central = new Central(new Dictionary<string, Action>() {
-                {"Aula 01", Aula01.Executar},
+                {"Aula 01 - Primeiro Programa Padrão C# Puro", PrimeiroProgramaPadraoCsharpPuro.Executar},
                 {"Aula 02 - Primeiro Programa Padrao C#", PrimeiroProgramaPadraoCSharp.Executar }
             });
 
