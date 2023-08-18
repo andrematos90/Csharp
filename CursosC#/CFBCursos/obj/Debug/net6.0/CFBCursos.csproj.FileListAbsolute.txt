@@ -1,0 +1,15 @@
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CFBCursos\bin\Debug\net6.0\CFBCursos.exe
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CFBCursos\bin\Debug\net6.0\CFBCursos.deps.json
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CFBCursos\bin\Debug\net6.0\CFBCursos.runtimeconfig.json
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CFBCursos\bin\Debug\net6.0\CFBCursos.dll
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CFBCursos\bin\Debug\net6.0\CFBCursos.pdb
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CFBCursos\obj\Debug\net6.0\CFBCursos.csproj.AssemblyReference.cache
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CFBCursos\obj\Debug\net6.0\CFBCursos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CFBCursos\obj\Debug\net6.0\CFBCursos.AssemblyInfoInputs.cache
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CFBCursos\obj\Debug\net6.0\CFBCursos.AssemblyInfo.cs
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CFBCursos\obj\Debug\net6.0\CFBCursos.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CFBCursos\obj\Debug\net6.0\CFBCursos.dll
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CFBCursos\obj\Debug\net6.0\refint\CFBCursos.dll
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CFBCursos\obj\Debug\net6.0\CFBCursos.pdb
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CFBCursos\obj\Debug\net6.0\CFBCursos.genruntimeconfig.cache
+C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\CFBCursos\obj\Debug\net6.0\ref\CFBCursos.dll
