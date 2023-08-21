@@ -13,7 +13,7 @@ namespace CursoCSharp
         {
             var central = new Central(new Dictionary<string, Action>() {
                 {"Aula 01 - Primeiro Programa Padrão C# Puro", PrimeiroProgramaPadraoCsharpPuro.Executar},
-                // {"Aula 02 - Primeiro Programa Padrao .Net", PrimeiroProgramaPadraodotNet.Executar },
+                {"Aula 02 - Primeiro Programa Padrao .Net", PrimeiroProgramaPadraodotNet.Executar },
                 {"Aula 03 - Variáveis", Variaveis.Executar },
                 {"Aula 04 - Escopo De Variáveis", EscopoDeVariaveis.Executar },
             });
