@@ -7,6 +7,7 @@ using CFBCursos.Aula04;
 using CFBCursos.Aula05;
 using CFBCursos.Aula06;
 using CFBCursos.Aula07;
+using CFBCursos.Aula08;
 
 
 namespace CursoCSharp
@@ -23,6 +24,7 @@ namespace CursoCSharp
                 {"Aula 05 - Operadores e Operações", OperadoresEOperacoes.Executar },
                 {"Aula 06 - Formatando a Saída No Console",  FormatandoSaidaNoConsole.Executar },
                 {"Aula 07 - Constantes",  Constantes.Executar },
+                {"Aula 08 - Lendo Valores do Teclado",  LendoValoresDoTeclado.Executar },
             });
 
             central.SelecionarEExecutar();
