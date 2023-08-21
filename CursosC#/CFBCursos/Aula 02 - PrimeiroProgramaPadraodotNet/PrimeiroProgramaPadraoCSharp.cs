@@ -26,6 +26,5 @@ Console.WriteLine("Hello World!!!!!!!!!!!"): Esta linha de código usa a classe 
 Em geral, esse código cria uma classe, define um método Main, usa a classe Console para imprimir uma mensagem no console e representa uma maneira válida de criar um programa de "Hello World" em C# usando o padrão .NET.
  
  Em resumo, a principal diferença entre os dois exemplos é o uso de um namespace no segundo exemplo (.NET), o que é mais comum em projetos maiores para melhor organização e prevenção de conflitos de nomes.
- 
 
  */
