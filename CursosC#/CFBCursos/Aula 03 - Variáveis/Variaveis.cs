@@ -22,7 +22,7 @@ namespace CFBCursos.Aula03
             //usando o var o C# identifica automaticamente o tipo de acordo com o valor da variável
             var aux = 14;
 
-            Console.WriteLine(nome);
+            Console.WriteLine(nome + letra);
 
         }
     }
