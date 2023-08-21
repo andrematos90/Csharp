@@ -14,7 +14,6 @@ class PrimeiroProgramaPadraodotNet
      }
   }
 
-
  Aqui está uma explicação passo a passo do seu código:
 
 class PrimeiroProgramaPadraodotNet: Isso declara uma nova classe chamada PrimeiroProgramaPadraodotNet.
