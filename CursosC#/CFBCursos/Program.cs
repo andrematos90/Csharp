@@ -6,6 +6,8 @@ using CFBCursos.Aula03;
 using CFBCursos.Aula04;
 using CFBCursos.Aula05;
 using CFBCursos.Aula06;
+using CFBCursos.Aula07;
+
 
 namespace CursoCSharp
 {
@@ -20,6 +22,7 @@ namespace CursoCSharp
                 {"Aula 04 - Escopo De Variáveis", EscopoDeVariaveis.Executar },
                 {"Aula 05 - Operadores e Operações", OperadoresEOperacoes.Executar },
                 {"Aula 06 - Formatando a Saída No Console",  FormatandoSaidaNoConsole.Executar },
+                {"Aula 07 - Constantes",  Constantes.Executar },
             });
 
             central.SelecionarEExecutar();
