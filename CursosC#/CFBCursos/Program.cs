@@ -4,6 +4,7 @@ using CFBCursos.Aula01;
 //using CFBCursos.Aula02;
 using CFBCursos.Aula03;
 using CFBCursos.Aula04;
+using CFBCursos.Aula05;
 
 namespace CursoCSharp
 {
@@ -16,6 +17,7 @@ namespace CursoCSharp
                 {"Aula 02 - Primeiro Programa Padrao .Net", PrimeiroProgramaPadraodotNet.Executar },
                 {"Aula 03 - Variáveis", Variaveis.Executar },
                 {"Aula 04 - Escopo De Variáveis", EscopoDeVariaveis.Executar },
+                {"Aula 05 - Operadores e Operações", OperadoresEOperacoes.Executar },
             });
 
             central.SelecionarEExecutar();
