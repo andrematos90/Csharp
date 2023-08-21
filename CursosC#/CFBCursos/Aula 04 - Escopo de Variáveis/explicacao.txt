@@ -1,0 +1,58 @@
+﻿Em C#, o escopo de uma variável se refere à região do código onde a variável é acessível e válida. O escopo determina onde a variável pode ser declarada, inicializada e usada dentro de um programa. Existem vários níveis de escopo em C#, incluindo o escopo de bloco, escopo de método, escopo de classe e escopo global. Vou explicar cada um deles:
+
+Escopo de Bloco: Este é o nível mais básico de escopo e está associado a um bloco de código delimitado por chaves {}. Variáveis declaradas dentro de um bloco de código estão visíveis apenas dentro desse bloco. Isso significa que elas não podem ser acessadas fora do bloco onde foram declaradas. Um exemplo de escopo de bloco:
+
+
+{
+    int x = 10; // Variável x está visível apenas dentro deste bloco
+    Console.WriteLine(x);
+} // x não é mais acessível aqui
+
+
+
+
+Escopo de Método: As variáveis declaradas dentro de um método (função) estão acessíveis apenas dentro desse método. Elas não podem ser acessadas de fora do método. Isso permite que você use nomes de variáveis repetidos em diferentes métodos sem conflitos. Um exemplo de escopo de método:
+
+
+class Program
+{
+    static void Main()
+    {
+        int y = 20; // Variável y está visível apenas dentro do método Main
+        Console.WriteLine(y);
+    } // y não é mais acessível aqui
+}
+
+
+
+Escopo de Classe: As variáveis declaradas no nível de classe (fora dos métodos) estão acessíveis para todos os métodos e blocos dentro dessa classe. Elas têm uma vida útil mais longa e podem armazenar informações que devem ser compartilhadas entre diferentes partes da classe. Um exemplo de escopo de classe:
+
+
+class Calculator
+{
+    private int result; // Variável result está acessível em todos os métodos desta classe
+
+    public void Add(int a, int b)
+    {
+        result = a + b;
+    }
+}
+
+
+
+Escopo Global: Variáveis declaradas no escopo global são acessíveis em todo o programa, em todas as classes e métodos. No entanto, é uma boa prática evitar o uso excessivo de variáveis globais, pois isso pode tornar o código mais difícil de entender e manter.
+
+
+int globalVariable = 100; // Variável global acessível em todo o programa
+
+class MyClass
+{
+    void MyMethod()
+    {
+        Console.WriteLine(globalVariable); // Acesso à variável global
+    }
+}
+
+
+
+É importante entender os diferentes níveis de escopo para evitar problemas como conflitos de nomes de variáveis e garantir uma organização clara do código. O uso adequado do escopo contribui para um código mais legível, modular e fácil de depurar.
