@@ -10,7 +10,7 @@ namespace CFBCursos.Aula01
     {
         public static void Executar()
         {
-            Console.WriteLine("Hello World!!!!!");
+            Console.WriteLine("Hello World!!!!!!!");
         }
     }
 }
