@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace CFBCursos.Aula01
 {
     class PrimeiroProgramaPadraoCsharpPuro
