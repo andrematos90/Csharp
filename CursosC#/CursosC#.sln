@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFBCursos", "CFBCursos\CFBCursos.csproj", "{A4D4C21C-5B46-49A4-888A-FECF96A7A685}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CFBCursos", "CFBCursos\CFBCursos.csproj", "{A4D4C21C-5B46-49A4-888A-FECF96A7A685}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicios", "Exercicios\Exercicios.csproj", "{91712A3F-01A0-486C-948C-8A5D88B331CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A4D4C21C-5B46-49A4-888A-FECF96A7A685}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4D4C21C-5B46-49A4-888A-FECF96A7A685}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4D4C21C-5B46-49A4-888A-FECF96A7A685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91712A3F-01A0-486C-948C-8A5D88B331CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91712A3F-01A0-486C-948C-8A5D88B331CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91712A3F-01A0-486C-948C-8A5D88B331CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91712A3F-01A0-486C-948C-8A5D88B331CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
