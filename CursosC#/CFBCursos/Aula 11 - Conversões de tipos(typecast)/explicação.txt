@@ -14,8 +14,9 @@ Neste caso, a conversão de int para float é segura, pois nenhum dado é perdid
 Typecast Explícito:
 O typecast explícito, também conhecido como casting, ocorre quando você precisa realizar uma conversão que pode resultar em perda de dados ou quando o compilador não pode determinar automaticamente como realizar a conversão.
 
-Por exemplo:
 
+
+Por exemplo:
 
 float numeroFloat = 3.14f;
 int numeroInteiro = (int)numeroFloat; // Conversão explícita de float para int
