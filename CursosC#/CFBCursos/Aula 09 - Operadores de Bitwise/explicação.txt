@@ -1,0 +1,35 @@
+﻿Bitwise é uma operação que manipula os bits individuais de um valor inteiro em nível de bit. Em C#, você pode usar operadores bitwise para realizar operações em nível de bit, como deslocamento de bits, operações AND, OR, XOR e NOT.
+
+Aqui estão os principais operadores bitwise em C#:
+
+AND Bit a Bit (&): Esse operador compara cada par de bits nas posições correspondentes de dois operandos e retorna 1 apenas se ambos os bits forem 1.
+
+
+int result = a & b;
+
+
+OR Bit a Bit (|): Esse operador compara cada par de bits nas posições correspondentes de dois operandos e retorna 1 se pelo menos um dos bits for 1.
+
+int result = a | b;
+
+
+XOR Bit a Bit (^): Esse operador compara cada par de bits nas posições correspondentes de dois operandos e retorna 1 apenas se os bits forem diferentes.
+
+int result = a ^ b;
+
+
+NOT (~): Esse operador inverte todos os bits de um operando, transformando 0 em 1 e 1 em 0.
+
+int result = ~a;
+
+
+Deslocamento à Esquerda (<<): Esse operador desloca os bits do operando à esquerda por um número específico de posições, preenchendo os espaços vazios com zeros.
+
+int result = a << n;
+
+
+Deslocamento à Direita (>>): Esse operador desloca os bits do operando à direita por um número específico de posições, preenchendo os espaços vazios com zeros ou com o bit de sinal (no caso de números com sinal).
+
+int result = a >> n;
+
+Essas operações são úteis para realizar tarefas de baixo nível, como manipulação de flags de configuração, compactação de dados, otimização de código e muito mais. No entanto, é importante usar as operações bitwise com cuidado, pois podem tornar o código menos legível e mais propenso a erros se não forem usadas corretamente.
