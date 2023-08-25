@@ -9,6 +9,7 @@ using CFBCursos.Aula06;
 using CFBCursos.Aula07;
 using CFBCursos.Aula08;
 using CFBCursos.Aula09;
+using CFBCursos.Aula10;
 
 
 namespace CursoCSharp
@@ -27,6 +28,7 @@ namespace CursoCSharp
                 {"Aula 07 - Constantes",  Constantes.Executar },
                 {"Aula 08 - Lendo Valores do Teclado",  LendoValoresDoTeclado.Executar },
                 {"Aula 09 - Operações de Bitwise",  OperadoresDeBitwise.Executar },
+                {"Aula 10 - Enumeradores (Enum)", Enumeradores.Executar },
 
             });
 

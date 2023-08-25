@@ -1,0 +1,40 @@
+﻿Em C#, enum é uma abreviação para "enumeration" (enumeração) e é uma estrutura de dados usada para definir um conjunto de constantes nomeadas, geralmente representando valores inteiros relacionados entre si. Enums são úteis quando você deseja representar um conjunto fixo de opções ou valores que são semanticamente relacionados, como os dias da semana, os meses do ano, códigos de erro, etc.
+
+Aqui está como você pode declarar e usar um enum em C#:
+
+enum DiaDaSemana
+{
+    Domingo,
+    Segunda,
+    Terça,
+    Quarta,
+    Quinta,
+    Sexta,
+    Sábado
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        DiaDaSemana hoje = DiaDaSemana.Terça;
+        Console.WriteLine("Hoje é " + hoje); // Saída: Hoje é Terça
+    }
+}
+
+
+Neste exemplo, DiaDaSemana é um enum que contém sete constantes nomeadas. Cada constante é associada a um valor inteiro, começando por 0 para Domingo, 1 para Segunda, e assim por diante. Você pode usar essas constantes em seu código para melhorar a legibilidade e manutenção, em vez de usar valores numéricos "mágicos".
+
+Os enum também podem ser usados para atribuir explicitamente valores inteiros às constantes:
+
+enum Status
+{
+    Inativo = 0,
+    Ativo = 1,
+    Pausado = 2
+}
+
+
+Dessa forma, você pode associar valores específicos às constantes enum, mas ainda assim referenciar essas constantes por seus nomes ao escrever seu código.
+
+Em resumo, enum em C# é uma construção que permite definir um conjunto de constantes nomeadas para melhorar a legibilidade e manutenção do código, especialmente quando você tem um conjunto predefinido de valores relacionados.
