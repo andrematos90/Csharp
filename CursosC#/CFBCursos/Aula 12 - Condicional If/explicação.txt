@@ -1,0 +1,38 @@
+﻿A declaração condicional "if" em C# é uma estrutura fundamental de controle de fluxo que permite que você execute um bloco de código somente se uma condição especificada for verdadeira. Aqui está a sintaxe básica da declaração "if" em C#:
+
+
+if (condição)
+{
+    // Código a ser executado se a condição for verdadeira
+}
+
+
+Aqui está uma explicação passo a passo de como a declaração "if" funciona:
+
+A declaração começa com a palavra-chave "if", seguida de um par de parênteses "(" e ")" que contêm uma expressão booleana (condição). A condição é avaliada como verdadeira ou falsa.
+
+Se a condição for avaliada como verdadeira, o bloco de código entre as chaves "{}" que segue imediatamente será executado. Se a condição for avaliada como falsa, o bloco de código não será executado.
+
+Aqui está um exemplo prático de como usar a declaração "if" em C#:
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int idade = 18;
+
+        if (idade >= 18)
+        {
+            Console.WriteLine("Você é maior de idade.");
+        }
+      
+    }
+}
+
+
+Neste exemplo, a variável idade é definida como 18. A declaração "if" verifica se a idade é maior ou igual a 18. Como a condição é verdadeira, o bloco de código dentro do primeiro conjunto de chaves é executado e a mensagem "Você é maior de idade." é exibida. 
+
+Além disso, é possível usar declarações "if" aninhadas (uma dentro da outra) e adicionar mais condições utilizando "else if" para tratar diferentes cenários. Isso permite controlar o fluxo do programa de acordo com várias situações possíveis.
