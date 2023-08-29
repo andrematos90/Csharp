@@ -11,6 +11,8 @@ using CFBCursos.Aula08;
 using CFBCursos.Aula09;
 using CFBCursos.Aula10;
 using CFBCursos.Aula11;
+using CFBCursos.Aula12;
+
 
 namespace CursoCSharp
 {
@@ -30,6 +32,7 @@ namespace CursoCSharp
                 {"Aula 09 - Operações de Bitwise",  OperadoresDeBitwise.Executar },
                 {"Aula 10 - Enumeradores (Enum)", Enumeradores.Executar },
                 {"Aula 11 - Conversões de Tipo (typecast)", Typecast.Executar },
+                {"Aula 12 - Condicional If", CondicionalIf.Executar }
 
             });
 
