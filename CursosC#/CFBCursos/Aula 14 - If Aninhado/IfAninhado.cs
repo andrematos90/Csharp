@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CFBCursos.Aula13
+namespace CFBCursos.Aula14
 {
     class IfAninhado
     {
@@ -30,15 +30,33 @@ namespace CFBCursos.Aula13
 
             if (media >= 7)
             {
-                resultado = "Apovado";
-            }
-            else if( media <= 6 && media >= 4)
-            {
-                resultado = "Recuperação";
+               if(media == 10)
+                {
+                    resultado = "Aprovado! Excelente!!!";
+                }
+               else if(media >=8)
+                {
+                    resultado = "Aprovado!Muito bom";
+                }
+                else
+                {
+                    resultado = "Aprovado";
+                }
             }
             else
             {
-                resultado = "Reprovado";
+                if(media >= 6)
+                {
+                    resultado = "Recuperação";
+                }
+                else if(media >= 4)
+                {
+                    resultado = "Recuperação!Ta feio";
+                }
+                else
+                {
+                    resultado = "Reprovado!!!!!!!!!";
+                }
             }
 
             Console.WriteLine("média {0}    situação: {1}", media, resultado);
