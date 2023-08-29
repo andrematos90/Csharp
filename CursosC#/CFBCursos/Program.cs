@@ -34,7 +34,7 @@ namespace CursoCSharp
                 {"Aula 10 - Enumeradores (Enum)", Enumeradores.Executar },
                 {"Aula 11 - Conversões de Tipo (typecast)", Typecast.Executar },
                 {"Aula 12 - Condicional If", CondicionalIf.Executar },
-                {"Aula 13 - Condicional If/Else", CondicionalIfElse.Executar }
+                {"Aula 13 - Condicional If/Else", IfAninhado.Executar }
 
             });
 
