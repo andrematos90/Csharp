@@ -31,12 +31,7 @@ namespace CFBCursos.Aula12
             {
                 Console.WriteLine("média {0}: Aprovado!", media);
             }
-            else
-            {
-                Console.WriteLine("media {0}: Reprovado!", media);
-            }
-
-
+            
         }
     }
 }
