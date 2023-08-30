@@ -44,7 +44,7 @@ namespace CursoCSharp
                 {"Aula 15 - Switch Case", SwitchCase.Executar },
                 {"Aula 16 - GoTo", GoTo.Executar },
                 {"Aula 17 - Arrays/Vetores", Arrays.Executar },
-                {"Aula 18 - Arrays Bidimensionais (Matrizes)", ArraysMatrizes.Executar }
+                {"Aula 18 - Arrays Bidimensionais (Matrizes)", ArraysMatrizes.Executar },
                 {"Aula 19 - Loop For", LoopFor.Executar }
 
             });
