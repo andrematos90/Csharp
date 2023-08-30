@@ -21,6 +21,7 @@ namespace CFBCursos.Aula17
             numeros[3] = 4;
             numeros[4] = 5;
 
+
             //outra forma de atribuir int[] numero = new int[5]{1, 2, 3, 4, 5} declarando e ja atribuindo com a quantidade especidicada de elementos
             //outra forma de atribuir int[] numero = {1, 2, 3, 4, 5} declarando e ja atribuindo
 
