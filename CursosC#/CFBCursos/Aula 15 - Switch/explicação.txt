@@ -1,0 +1,57 @@
+﻿O switch case em C# é uma estrutura de controle que permite a avaliação de uma expressão e a execução de diferentes blocos de código com base nos possíveis valores dessa expressão. Ele é frequentemente usado para criar lógica condicional mais limpa e organizada quando se têm múltiplas opções a serem consideradas.
+
+Aqui está a sintaxe geral do switch case em C#:
+
+
+
+switch (expressao)
+{
+    case valor1:
+        // Código a ser executado quando expressao é igual a valor1
+        break;
+    case valor2:
+        // Código a ser executado quando expressao é igual a valor2
+        break;
+    // ... Mais casos podem ser adicionados aqui
+    default:
+        // Código a ser executado quando expressao não corresponde a nenhum caso anterior
+        break;
+}
+
+
+Aqui está uma breve explicação dos elementos envolvidos:
+
+expressao: Esta é a expressão cujo valor será avaliado.
+case valorX: Aqui você lista os valores que você quer comparar com a expressão. Se a expressão for igual a valorX, o código dentro desse bloco de caso será executado.
+break: Cada bloco de caso deve terminar com a instrução break, que sai do bloco switch após o caso correspondente ter sido executado. Isso impede que o código continue a executar os casos subsequentes. Se o break for omitido, a execução continuará nos casos seguintes, incluindo os que não correspondem aos valores da expressão.
+default: Este bloco é opcional e é executado quando a expressão não corresponde a nenhum dos casos listados. É uma espécie de "caso padrão" para lidar com valores que não foram tratados nos casos anteriores.
+Aqui está um exemplo simples para ilustrar como o switch case funciona em C#:
+
+
+int diaDaSemana = 3;
+
+switch (diaDaSemana)
+{
+    case 1:
+        Console.WriteLine("Segunda-feira");
+        break;
+    case 2:
+        Console.WriteLine("Terça-feira");
+        break;
+    case 3:
+        Console.WriteLine("Quarta-feira");
+        break;
+    case 4:
+        Console.WriteLine("Quinta-feira");
+        break;
+    case 5:
+        Console.WriteLine("Sexta-feira");
+        break;
+    default:
+        Console.WriteLine("Fim de semana");
+        break;
+}
+
+
+
+este exemplo, como diaDaSemana é igual a 3, o código dentro do caso case 3: será executado, resultando na saída "Quarta-feira".

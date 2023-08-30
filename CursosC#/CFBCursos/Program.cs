@@ -14,6 +14,7 @@ using CFBCursos.Aula11;
 using CFBCursos.Aula12;
 using CFBCursos.Aula13;
 using CFBCursos.Aula14;
+using CFBCursos.Aula15;
 
 namespace CursoCSharp
 {
@@ -35,7 +36,8 @@ namespace CursoCSharp
                 {"Aula 11 - Conversões de Tipo (typecast)", Typecast.Executar },
                 {"Aula 12 - Condicional If", CondicionalIf.Executar },
                 {"Aula 13 - Condicional If/Else", CondicionalIfElse.Executar },
-                {"Aula 14 - If Aninhado", IfAninhado.Executar }
+                {"Aula 14 - If Aninhado", IfAninhado.Executar },
+                {"Aula 15 - Switch Case", SwitchCase.Executar }
 
             });
 
