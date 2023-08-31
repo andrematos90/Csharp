@@ -1,1 +1,44 @@
-﻿
+﻿O loop do-while em C# é uma estrutura de controle que permite que um bloco de código seja repetidamente executado enquanto uma determinada condição for verdadeira. A diferença entre o do-while e o while tradicional é que o bloco de código dentro do do-while é executado pelo menos uma vez, independentemente da condição ser verdadeira ou falsa.
+
+Aqui está a sintaxe básica do loop do-while em C#:
+
+do
+{
+    // Bloco de código a ser executado
+} while (condição);
+
+
+Aqui está como funciona o loop do-while:
+
+O bloco de código dentro do do é executado pelo menos uma vez, sem verificar a condição primeiro.
+Após a primeira execução do bloco de código, a condição é avaliada.
+Se a condição for verdadeira, o bloco de código será executado novamente. Caso contrário, o loop será encerrado.
+Um exemplo simples de uso do loop do-while é quando você deseja solicitar entrada do usuário até que eles forneçam um valor válido:
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int numero;
+        
+        do
+        {
+            Console.Write("Digite um número positivo: ");
+        } while (!int.TryParse(Console.ReadLine(), out numero) || numero <= 0);
+        
+        Console.WriteLine($"Você digitou o número {numero}");
+    }
+}
+
+
+
+Neste exemplo, o programa solicita ao usuário que digite um número positivo. O bloco de código dentro do loop do-while verifica se a entrada do usuário é válida (um número inteiro positivo) usando o método int.TryParse(). O loop continua a pedir entrada até que um valor válido seja fornecido.
+
+Lembre-se de que o loop do-while é útil quando você precisa garantir que um bloco de código seja executado pelo menos uma vez, independentemente da condição. Se você só quiser executar o bloco de código enquanto a condição for verdadeira e não se importar se ele nunca for executado, o while tradicional pode ser mais apropriado.
+
+
+
+
+
