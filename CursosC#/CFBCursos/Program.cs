@@ -21,6 +21,7 @@ using CFBCursos.Aula18;
 using CFBCursos.Aula19;
 using CFBCursos.Aula20;
 using CFBCursos.Aula21;
+using CFBCursos.Aula22;
 
 namespace CursoCSharp
 {
@@ -49,11 +50,12 @@ namespace CursoCSharp
                 {"Aula 18 - Arrays Bidimensionais (Matrizes)", ArraysMatrizes.Executar },
                 {"Aula 19 - Loop For", LoopFor.Executar },
                 {"Aula 20 - Loop While", LoopWhile.Executar },
-                {"Aula 21 - Loop Do While", LoopDoWhile.Executar }
+                {"Aula 21 - Loop Do While", LoopDoWhile.Executar },
+                {"Aula 22 - Loop ForEach", LoopForEach.Executar }
 
             });
 
             central.SelecionarEExecutar();
-        }
+        } 
     }
 }
