@@ -19,6 +19,7 @@ using CFBCursos.Aula16;
 using CFBCursos.Aula17;
 using CFBCursos.Aula18;
 using CFBCursos.Aula19;
+using CFBCursos.Aula20;
 
 namespace CursoCSharp
 {
@@ -45,7 +46,8 @@ namespace CursoCSharp
                 {"Aula 16 - GoTo", GoTo.Executar },
                 {"Aula 17 - Arrays/Vetores", Arrays.Executar },
                 {"Aula 18 - Arrays Bidimensionais (Matrizes)", ArraysMatrizes.Executar },
-                {"Aula 19 - Loop For", LoopFor.Executar }
+                {"Aula 19 - Loop For", LoopFor.Executar },
+                {"Aula 20 - Loop While", LoopWhile.Executar }
 
             });
 

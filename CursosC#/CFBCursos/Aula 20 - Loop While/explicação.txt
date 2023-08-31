@@ -1,0 +1,46 @@
+﻿Em C#, um loop while é uma estrutura de controle que permite que um bloco de código seja executado repetidamente enquanto uma condição especificada for verdadeira. Ele é uma das formas de implementar uma iteração em um programa.
+
+A estrutura básica de um loop while em C# é a seguinte:
+
+while (condição)
+{
+    // Código a ser executado enquanto a condição for verdadeira
+}
+
+
+
+
+Aqui está um exemplo simples para ilustrar como um loop while funciona:
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int contador = 1;
+
+        while (contador <= 5)
+        {
+            Console.WriteLine("Contagem: " + contador);
+            contador++;
+        }
+
+        Console.WriteLine("Loop concluído.");
+    }
+}
+
+
+Neste exemplo, o loop while será executado repetidamente enquanto a condição (contador <= 5) for verdadeira. O valor do contador é incrementado a cada iteração usando contador++. O resultado será:
+
+Contagem: 1
+Contagem: 2
+Contagem: 3
+Contagem: 4
+Contagem: 5
+Loop concluído.
+
+
+É importante garantir que a condição dentro do loop while eventualmente se torne falsa, caso contrário, o loop continuará a ser executado indefinidamente, causando um "loop infinito". Certifique-se de que a condição seja alterada de alguma forma durante a execução do loop para evitar isso.
+
+Lembre-se de que a estrutura while avalia a condição antes de cada iteração. Se a condição for falsa na primeira avaliação, o código dentro do loop nunca será executado. Portanto, é possível que o corpo do loop while nem sempre seja executado, dependendo da condição inicial.
