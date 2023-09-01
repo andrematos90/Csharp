@@ -12,9 +12,9 @@ namespace Exercicios
         {
             string randomSentence = "We have a";
             
-            Console.WriteLine(randomSentence + "  random sentence");
-            Console.WriteLine("{0} a random sentence", randomSentence);
-            Console.WriteLine($"{randomSentence} a ramdom sentence");
+            Console.WriteLine(randomSentence + " random sentence");
+            Console.WriteLine("{0} random sentence", randomSentence);
+            Console.WriteLine($"{randomSentence} ramdom sentence");
 
             
         }
