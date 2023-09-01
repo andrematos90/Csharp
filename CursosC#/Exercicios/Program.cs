@@ -10,6 +10,7 @@ namespace CursoCSharp {
                 {"Exercício 001 - Média Simples", Ex001.Executar},
                 {"Exercício 002 - Escopo de Variáveis", Ex002.Executar},
                 {"Exercício 003 - Escopo de Variáveis e Matrizes", Ex003.Executar},
+                {"Exercício 004 - Formataçao de Strings", Ex004.Executar},
             });
 
             central.SelecionarEExecutar();
