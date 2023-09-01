@@ -12,6 +12,7 @@ namespace CursoCSharp {
                 {"Exercício 003 - Escopo de Variáveis e Matrizes", Ex003.Executar},
                 {"Exercício 004 - Formataçao de Strings", Ex004.Executar},
                 {"Exercício 005 - Enumeradores", Ex005.Executar},
+                {"Exercício 006 - Conversões de Tipo", Ex006.Executar},
             });
 
             central.SelecionarEExecutar();
