@@ -32,7 +32,7 @@ namespace Exercicios
 
         {
 
-            int[,] matriz = new int[3, 3] { { 10, 20, 30 }, { 40, 50, 60 }, { 70, 80, 90, } };
+            int[,] matriz = new int[3, 3] { { 10, 20, 30 }, { 40, 50, 60 }, { 70, 80, 90 } };
 
  
             // Preencha a matriz com valores aleatórios entre 1 e 100
@@ -69,3 +69,40 @@ namespace Exercicios
         }
     }
 }
+
+
+
+
+/*outra resolução
+ * 
+ * 
+ *  {
+        int[,] matriz = new int[3, 3] { { 10, 20, 30 }, { 40, 50, 60 }, { 70, 80, 90 } }; // Corrija a matriz de inicialização
+
+        Console.Write("Escolha uma linha (1, 2 ou 3): ");
+        int linhaEscolhida = int.Parse(Console.ReadLine());
+
+        int soma = CalculaSomaLinha(matriz, linhaEscolhida);
+
+        Console.WriteLine($"A soma da linha {linhaEscolhida} é: {soma}");
+    }
+
+    static int CalculaSomaLinha(int[,] matriz, int linha)
+    {
+        // Implemente a função para calcular a soma da linha especificada
+        // e retorne o resultado
+        int soma = 0;
+
+        if (linha >= 1 && linha <= matriz.GetLength(0))
+        {
+            for (int coluna = 0; coluna < matriz.GetLength(1); coluna++)
+            {
+                soma += matriz[linha - 1, coluna];
+            }
+            return soma;
+        }
+        else
+        {
+            throw new InvalidOperationException("Linha inválida"); // Lança uma exceção em caso de linha inválida.
+        }
+    }*/
