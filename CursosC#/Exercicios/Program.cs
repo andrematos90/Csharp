@@ -13,6 +13,7 @@ namespace CursoCSharp {
                 {"Exercício 004 - Formataçao de Strings", Ex004.Executar},
                 {"Exercício 005 - Enumeradores", Ex005.Executar},
                 {"Exercício 006 - Conversões de Tipo", Ex006.Executar},
+                {"Exercício 007 - Switch", Ex007.Executar},
             });
 
             central.SelecionarEExecutar();
