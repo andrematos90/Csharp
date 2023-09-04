@@ -3,7 +3,6 @@ C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\Exercicios\bin\Debug\n
 C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\Exercicios\bin\Debug\net6.0\Exercicios.runtimeconfig.json
 C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\Exercicios\bin\Debug\net6.0\Exercicios.dll
 C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\Exercicios\bin\Debug\net6.0\Exercicios.pdb
-C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\Exercicios\obj\Debug\net6.0\Exercicios.csproj.AssemblyReference.cache
 C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\Exercicios\obj\Debug\net6.0\Exercicios.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\Exercicios\obj\Debug\net6.0\Exercicios.AssemblyInfoInputs.cache
 C:\Users\andre\OneDrive\Documentos\GitHub\Csharp\CursosC#\Exercicios\obj\Debug\net6.0\Exercicios.AssemblyInfo.cs

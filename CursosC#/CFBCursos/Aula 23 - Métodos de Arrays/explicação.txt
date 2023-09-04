@@ -1,0 +1,374 @@
+﻿BinarySearch
+
+O método BinarySearch em C# é uma função que permite buscar um elemento em uma coleção ordenada de elementos usando uma abordagem de pesquisa binária. A pesquisa binária é um algoritmo eficiente para encontrar um elemento em uma coleção ordenada, pois reduz o número de comparações necessárias para encontrar o elemento desejado, em comparação com a pesquisa linear.
+
+Aqui está a assinatura básica do método BinarySearch em C#:
+
+public static int BinarySearch<T>(T[] array, T value);
+
+
+Aqui estão os principais parâmetros do método:
+
+array: É o array (ou outra coleção) onde você deseja procurar o elemento.
+value: É o elemento que você deseja encontrar.
+O método BinarySearch retorna o índice do elemento se ele for encontrado na coleção, ou um valor negativo que representa a posição onde o elemento deve ser inserido para manter a ordenação. O valor negativo retornado é representado como o complemento de dois do índice do próximo elemento maior do que o valor procurado. Se o elemento não for encontrado e não houver elementos maiores que o valor procurado na coleção, o método retorna o complemento de dois do índice do último elemento na coleção mais 1.
+
+Aqui está um exemplo de como usar o método BinarySearch em C#:
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 1, 3, 5, 7, 9 };
+        int target = 5;
+
+        int index = Array.BinarySearch(numbers, target);
+
+        if (index >= 0)
+        {
+            Console.WriteLine($"O elemento {target} foi encontrado no índice {index}.");
+        }
+        else
+        {
+            Console.WriteLine($"O elemento {target} não foi encontrado. Ele deve ser inserido no índice {-index - 1} para manter a ordenação.");
+        }
+    }
+}
+
+
+Neste exemplo, a função BinarySearch é usada para procurar o valor 5 no array numbers. Se o valor for encontrado, ela imprime o índice onde o valor foi encontrado. Se não for encontrado, ela imprime a posição onde o valor deve ser inserido para manter a ordenação. No caso deste exemplo, o valor 5 é encontrado no índice 2.
+
+
+
+
+
+
+Length:
+
+Propriedade que retorna o número de elementos no array. Por exemplo:
+
+int[] numeros = { 1, 2, 3, 4, 5 };
+int tamanho = numeros.Length; // tamanho será igual a 5
+
+
+
+
+
+
+
+GetValue(int index):
+
+Método que retorna o valor do elemento no índice especificado. Por exemplo:
+
+int[] numeros = { 1, 2, 3, 4, 5 };
+int terceiroNumero = (int)numeros.GetValue(2); // terceiroNumero será igual a 3
+
+
+
+
+
+SetValue(object value, int index):
+
+Método que define o valor do elemento no índice especificado. Por exemplo:
+
+int[] numeros = { 1, 2, 3, 4, 5 };
+numeros.SetValue(10, 2); // Define o terceiro elemento como 10
+
+
+
+
+
+CopyTo(Array array, int index):
+
+Copia os elementos do array atual para outro array, começando no índice especificado no segundo array. Por exemplo:
+
+int[] numeros = { 1, 2, 3, 4, 5 };
+int[] copia = new int[5];
+numeros.CopyTo(copia, 0); // Copia os elementos de 'numeros' para 'copia'
+
+
+
+
+
+
+Sort():
+
+Classifica os elementos do array em ordem crescente. Por exemplo:
+
+int[] numeros = { 5, 2, 4, 1, 3 };
+Array.Sort(numeros); // Agora, 'numeros' estará ordenado: { 1, 2, 3, 4, 5 }
+
+
+
+
+Reverse():
+
+Inverte a ordem dos elementos no array. Por exemplo:
+
+int[] numeros = { 1, 2, 3, 4, 5 };
+Array.Reverse(numeros); // Agora, 'numeros' estará invertido: { 5, 4, 3, 2, 1 }
+
+
+
+IndexOf(object value) e LastIndexOf(object value):
+
+Esses métodos retornam o índice da primeira ocorrência (ou última ocorrência) do valor especificado no array. Se o valor não for encontrado, eles retornam -1. Por exemplo:
+
+int[] numeros = { 1, 2, 3, 4, 5, 3 };
+int indicePrimeiraOcorrencia = Array.IndexOf(numeros, 3); // será igual a 2
+int indiceUltimaOcorrencia = Array.LastIndexOf(numeros, 3); // será igual a 5
+
+
+
+
+
+
+Clone():
+
+Esse método cria uma cópia rasa (shallow copy) do array atual. Isso significa que ele cria um novo array com os mesmos elementos, mas os elementos em si não são clonados. Qualquer alteração nos elementos do novo array será refletida no array original e vice-versa.
+
+int[] numeros = { 1, 2, 3, 4, 5 };
+int[] copia = (int[])numeros.Clone();
+
+
+
+
+
+Clear(Array array, int index, int length):
+
+Remove uma porção de elementos do array, atribuindo valores padrão a eles (zero para tipos numéricos, null para tipos de referência). Você especifica o índice inicial e o número de elementos a serem apagados.
+
+int[] numeros = { 1, 2, 3, 4, 5 };
+Array.Clear(numeros, 1, 3); // Remove os elementos 2, 3 e 4 (índices 1, 2 e 3)
+
+
+
+
+
+
+Resize(ref T[] array, int newSize):
+
+Esse método é usado para redimensionar um array. Ele pode ser usado para aumentar ou diminuir o tamanho do array, mas é necessário passar o array como referência.
+
+int[] numeros = { 1, 2, 3, 4, 5 };
+Array.Resize(ref numeros, 7); // Aumenta o tamanho para 7 elementos
+
+
+
+
+Exists(Predicate<T> match):
+
+Verifica se pelo menos um elemento no array atende a uma condição especificada. Você precisa fornecer um predicado que define a condição.
+
+int[] numeros = { 1, 2, 3, 4, 5 };
+bool existePar = Array.Exists(numeros, n => n % 2 == 0); // Retorna true, pois há um número par
+
+
+
+
+
+
+TrueForAll(Predicate<T> match):
+
+Verifica se todos os elementos no array atendem a uma condição especificada. Você precisa fornecer um predicado que define a condição.
+
+int[] numeros = { 2, 4, 6, 8, 10 };
+bool todosPares = Array.TrueForAll(numeros, n => n % 2 == 0); // Retorna true, pois todos são pares
+
+
+
+
+
+ForEach(Action<T> action):
+
+Executa uma ação em cada elemento do array.
+
+int[] numeros = { 1, 2, 3, 4, 5 };
+Array.ForEach(numeros, n => Console.WriteLine(n * 2)); // Imprime o dobro de cada número
+
+
+
+
+
+GetLongLengthT
+GetLongLength é um método que permite obter o comprimento de uma dimensão específica em um array multidimensional em C#. Diferentemente do método Length, que retorna o número total de elementos em todas as dimensões do array, o GetLongLength fornece o número de elementos em uma dimensão específica, identificada pelo índice da dimensão.
+
+Aqui está um exemplo de como usar o GetLongLength em um array multidimensional:
+
+
+int[,] matriz = new int[3, 4]; // Array multidimensional com 3 linhas e 4 colunas
+
+// Obtém o comprimento da primeira dimensão (linhas)
+long comprimentoDasLinhas = matriz.GetLongLength(0); // Retorna 3
+
+// Obtém o comprimento da segunda dimensão (colunas)
+long comprimentoDasColunas = matriz.GetLongLength(1); // Retorna 4
+Neste exemplo, matriz.GetLongLength(0) retorna o número de linhas (3), e matriz.GetLongLength(1) retorna o número de colunas (4) na matriz bidimensional.
+
+Este método é útil quando você precisa iterar por arrays multidimensionais ou realizar operações específicas em uma dimensão particular do array.
+
+
+
+
+
+
+ GetLowerBound
+
+GetLowerBound é um método que permite obter o índice mínimo (limite inferior) de uma dimensão específica em um array multidimensional em C#. Em arrays multidimensionais, cada dimensão possui seus próprios índices mínimo e máximo, que definem o intervalo de índices válidos para essa dimensão.
+
+Aqui está um exemplo de como usar o GetLowerBound em um array multidimensional:
+
+
+int[,] matriz = new int[3, 4]; // Array multidimensional com 3 linhas e 4 colunas
+
+// Obtém o limite inferior da primeira dimensão (linhas)
+int limiteInferiorDasLinhas = matriz.GetLowerBound(0); // Retorna 0
+
+// Obtém o limite inferior da segunda dimensão (colunas)
+int limiteInferiorDasColunas = matriz.GetLowerBound(1); // Retorna 0
+Neste exemplo, matriz.GetLowerBound(0) retorna o limite inferior dos índices das linhas (que é 0, pois os índices de linhas começam em 0), e matriz.GetLowerBound(1) retorna o limite inferior dos índices das colunas (também é 0).
+
+O método GetLowerBound é útil quando você precisa iterar por arrays multidimensionais e deseja saber a partir de qual índice a dimensão começa. Em C#, os índices de arrays multidimensionais geralmente começam em 0, mas o GetLowerBound permite que você obtenha essa informação dinamicamente.
+
+
+
+
+
+
+GetUpperBound
+
+GetUpperBound é um método que permite obter o índice máximo (limite superior) de uma dimensão específica em um array multidimensional em C#. Em arrays multidimensionais, cada dimensão possui seus próprios índices mínimo e máximo, que definem o intervalo de índices válidos para essa dimensão.
+
+Aqui está um exemplo de como usar o GetUpperBound em um array multidimensional:
+
+
+int[,] matriz = new int[3, 4]; // Array multidimensional com 3 linhas e 4 colunas
+
+// Obtém o limite superior da primeira dimensão (linhas)
+int limiteSuperiorDasLinhas = matriz.GetUpperBound(0); // Retorna 2
+
+// Obtém o limite superior da segunda dimensão (colunas)
+int limiteSuperiorDasColunas = matriz.GetUpperBound(1); // Retorna 3
+Neste exemplo, matriz.GetUpperBound(0) retorna o limite superior dos índices das linhas (que é 2, pois a matriz tem 3 linhas, e os índices das linhas vão de 0 a 2), e matriz.GetUpperBound(1) retorna o limite superior dos índices das colunas (que é 3, pois a matriz tem 4 colunas, e os índices das colunas vão de 0 a 3).
+
+O método GetUpperBound é útil quando você precisa iterar por arrays multidimensionais e deseja saber qual é o índice máximo válido para uma dimensão específica. Isso é importante para evitar erros de índice fora do intervalo ao acessar elementos do array.
+
+
+
+
+
+ GetValue
+
+GetValue é um método que permite acessar o valor de um elemento específico em um array em C#. Esse método é usado para recuperar o valor de um elemento com base nos índices fornecidos.
+
+Aqui está um exemplo de como usar o GetValue para acessar elementos em um array unidimensional:
+
+
+int[] numeros = { 1, 2, 3, 4, 5 };
+
+int primeiroNumero = (int)numeros.GetValue(0); // Acessa o primeiro elemento (índice 0)
+int terceiroNumero = (int)numeros.GetValue(2); // Acessa o terceiro elemento (índice 2)
+Neste exemplo, numeros.GetValue(0) acessa o primeiro elemento do array, que é 1, e numeros.GetValue(2) acessa o terceiro elemento do array, que é 3.
+
+O método GetValue é uma forma de acessar elementos em um array quando você conhece os índices específicos que deseja acessar. Lembre-se de que, ao usar GetValue, você precisa converter o resultado para o tipo de dado apropriado, uma vez que o método retorna um valor do tipo object.
+
+
+
+
+
+
+IndexOf
+
+IndexOf é um método usado para encontrar o índice da primeira ocorrência de um elemento específico em um array unidimensional em C#. Este método procura o elemento no array e retorna o índice em que a primeira correspondência é encontrada. Se o elemento não for encontrado no array, o método retorna -1.
+
+Aqui está um exemplo de como usar o IndexOf para encontrar o índice de um elemento em um array:
+
+string[] nomes = { "Alice", "Bob", "Charlie", "David", "Eva" };
+
+int indiceCharlie = Array.IndexOf(nomes, "Charlie"); // Retorna 2
+int indiceFrank = Array.IndexOf(nomes, "Frank");     // Retorna -1, pois "Frank" não está no array
+Neste exemplo, Array.IndexOf(nomes, "Charlie") retorna 2, pois "Charlie" está na terceira posição do array. Por outro lado, Array.IndexOf(nomes, "Frank") retorna -1, pois "Frank" não está presente no array.
+
+O método IndexOf é útil quando você precisa verificar se um elemento específico existe em um array e obter sua posição se ele existir. Lembre-se de que ele retorna apenas o índice da primeira correspondência encontrada; se houver múltiplas ocorrências do elemento no array, ele indicará apenas o índice da primeira delas.
+
+
+
+
+
+ LastIndexOf
+
+LastIndexOf é um método semelhante ao IndexOf, mas em vez de encontrar a primeira ocorrência de um elemento em um array unidimensional em C#, ele encontra a última ocorrência desse elemento. Esse método procura o elemento de trás para frente no array e retorna o índice da última correspondência encontrada. Se o elemento não for encontrado no array, o método retorna -1.
+
+Aqui está um exemplo de como usar o LastIndexOf para encontrar o índice da última ocorrência de um elemento em um array:
+
+string[] nomes = { "Alice", "Bob", "Charlie", "David", "Eva", "Charlie" };
+
+int indiceUltimoCharlie = Array.LastIndexOf(nomes, "Charlie"); // Retorna 5
+int indiceFrank = Array.LastIndexOf(nomes, "Frank");           // Retorna -1, pois "Frank" não está no array
+Neste exemplo, Array.LastIndexOf(nomes, "Charlie") retorna 5, pois "Charlie" é encontrado na última posição do array. Por outro lado, Array.LastIndexOf(nomes, "Frank") retorna -1, pois "Frank" não está presente no array.
+
+O método LastIndexOf é útil quando você precisa encontrar a última ocorrência de um elemento em um array, em vez da primeira. Ele pode ser útil em situações em que você deseja percorrer o array de trás para frente e encontrar a última instância de um elemento específico.
+
+
+
+
+
+Reverse
+
+Reverse é um método em C# que é usado para inverter a ordem dos elementos em um array. Ele modifica o array original, reorganizando os elementos de forma que o primeiro elemento se torne o último e o último se torne o primeiro, e assim por diante.
+
+Aqui está um exemplo de como usar o método Reverse:
+
+
+int[] numeros = { 1, 2, 3, 4, 5 };
+
+Array.Reverse(numeros);
+
+// Agora, o array 'numeros' estará invertido: { 5, 4, 3, 2, 1 }
+Neste exemplo, o método Array.Reverse inverte a ordem dos elementos no array numeros. O resultado é que os elementos estão agora em ordem decrescente.
+
+O método Reverse é útil quando você precisa inverter a ordem dos elementos em um array sem criar um novo array. Ele modifica o array original diretamente, economizando memória e tempo de processamento, se necessário.
+
+
+
+SetValue
+ChatGPT
+SetValue é um método usado em C# para definir o valor de um elemento específico em um array. Ele permite que você atribua um novo valor a um elemento em uma posição específica do array.
+
+Aqui está um exemplo de como usar o SetValue:
+
+
+int[] numeros = { 1, 2, 3, 4, 5 };
+
+numeros.SetValue(10, 2);
+
+// Agora, o array 'numeros' será { 1, 2, 10, 4, 5 }
+Neste exemplo, numeros.SetValue(10, 2) define o valor 10 no terceiro elemento do array, que está no índice 2. O resultado é que o terceiro elemento do array agora é 10.
+
+É importante observar que o primeiro argumento do método SetValue é o valor que você deseja atribuir ao elemento, e o segundo argumento é o índice da posição do elemento no array que você deseja alterar.
+
+SetValue é útil quando você precisa modificar um elemento específico em um array existente sem criar um novo array. Isso permite que você atualize o conteúdo do array conforme necessário durante a execução do programa.
+
+
+
+
+
+Sort
+
+Sort é um método em C# usado para classificar os elementos de um array em ordem crescente. Ele reorganiza os elementos de forma que fiquem em ordem ascendente, de acordo com a ordem natural dos valores ou com base em um comparador personalizado.
+
+Aqui está um exemplo de como usar o método Sort para classificar um array de números inteiros em ordem crescente:
+
+
+int[] numeros = { 5, 2, 4, 1, 3 };
+
+Array.Sort(numeros);
+
+// Agora, o array 'numeros' estará ordenado em ordem crescente: { 1, 2, 3, 4, 5 }
+Neste exemplo, o método Array.Sort classifica o array numeros em ordem crescente. O resultado é que os elementos estão agora em ordem ascendente.
+
+É importante observar que o método Sort modifica o array original diretamente, reordenando seus elementos. Se você desejar manter o array original intacto e obter um novo array ordenado, pode usar a função OrderBy com LINQ para criar uma nova sequência ordenada.
+
+Além disso, o método Sort pode ser usado com arrays de tipos simples, como números inteiros e números de ponto flutuante, bem como com arrays de objetos complexos, desde que haja uma implementação adequada do método IComparable ou que você forneça um comparador personalizado. Isso permite que você ordene arrays de objetos complexos com base em critérios específicos.
