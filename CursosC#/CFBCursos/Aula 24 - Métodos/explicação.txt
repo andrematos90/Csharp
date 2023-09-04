@@ -1,1 +1,77 @@
-﻿
+﻿Em C#, métodos são blocos de código que realizam uma tarefa específica e podem ser chamados ou invocados em outros lugares do código. Os métodos são uma parte fundamental da programação orientada a objetos em C# e são usados para organizar e reutilizar o código. Vou explicar os principais conceitos relacionados a métodos em C#:
+
+Assinatura do Método: A assinatura de um método inclui seu nome, tipo de retorno, parâmetros e modificadores. A assinatura é o que diferencia um método de outros na mesma classe.
+
+Exemplo de uma assinatura de método simples:
+
+public int CalcularSoma(int a, int b)
+{
+    // corpo do método
+}
+
+
+Neste exemplo, CalcularSoma é o nome do método, int é o tipo de retorno e (int a, int b) são os parâmetros.
+
+Tipo de Retorno: Indica o tipo de dado que o método retorna após sua execução. Pode ser qualquer tipo de dado válido em C#, incluindo tipos primitivos, tipos personalizados e até mesmo tipos complexos.
+
+Parâmetros: São informações que o método recebe para realizar seu trabalho. Os parâmetros são opcionais e podem ser passados quando o método é chamado. No exemplo acima, a e b são parâmetros.
+
+Modificadores de Acesso: Definem a visibilidade do método em relação a outras partes do código. Os principais modificadores de acesso são public, private, protected, internal, etc. O modificador public permite que o método seja acessado de qualquer lugar do código.
+
+
+
+
+Exemplo:
+
+public void MetodoPublico()
+{
+    // corpo do método
+}
+
+private void MetodoPrivado()
+{
+    // corpo do método
+}
+
+
+Corpo do Método: É o bloco de código que contém as instruções que o método executa quando é chamado. O corpo do método é delimitado por chaves {}.
+
+Chamando um Método: Para chamar um método, você usa seu nome seguido pelos argumentos entre parênteses, se houver parâmetros. O valor retornado, se houver, pode ser atribuído a uma variável.
+
+Exemplo de chamada de método:
+
+
+int resultado = CalcularSoma(3, 5);
+
+
+Métodos Estáticos: São métodos que pertencem à classe em vez de uma instância específica da classe. Eles são definidos com o modificador static. Métodos estáticos são chamados usando o nome da classe em vez de uma instância da classe.
+
+Exemplo de método estático:
+
+
+public static double ConverterDolarParaReal(double valorDolar)
+{
+    // corpo do método
+}
+
+// Chamando o método estático
+double valorReal = MinhaClasse.ConverterDolarParaReal(50.0);
+
+
+Métodos de Instância: São métodos que pertencem a uma instância específica de uma classe. Eles não têm o modificador static. Para chamá-los, você precisa criar uma instância da classe.
+
+Exemplo de método de instância:
+
+
+public void ImprimirMensagem(string mensagem)
+{
+    // corpo do método
+}
+
+// Criando uma instância da classe
+MinhaClasse minhaInstancia = new MinhaClasse();
+
+// Chamando o método de instância
+minhaInstancia.ImprimirMensagem("Olá, mundo!");
+
+Esses são os conceitos básicos relacionados a métodos em C#. Os métodos são uma parte essencial da programação em C# e são usados para dividir o código em partes reutilizáveis e organizadas. Eles desempenham um papel fundamental na criação de aplicativos e sistemas complexos.
