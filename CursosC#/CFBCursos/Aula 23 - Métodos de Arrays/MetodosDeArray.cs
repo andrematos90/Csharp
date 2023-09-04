@@ -119,6 +119,7 @@ namespace CFBCursos.Aula23
 
             Console.WriteLine("----------------------------------------------");
             //public void SetValue(object valor, long pos);
+            // usado em C# para definir o valor de um elemento específico
             Console.WriteLine("SetValue");
             vetor2.SetValue(99, 0);
             for(int i = 0; i < vetor2.Length; i++)
@@ -134,6 +135,7 @@ namespace CFBCursos.Aula23
             Console.WriteLine("----------------------------------------------");
 
             //public static void Sort(array);
+            // usado para classificar os elementos de um array em ordem crescente
             Console.WriteLine("Sort");
             Array.Sort(vetor1);
             Array.Sort(vetor2);
