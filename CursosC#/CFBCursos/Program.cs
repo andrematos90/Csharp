@@ -24,6 +24,7 @@ using CFBCursos.Aula21;
 using CFBCursos.Aula22;
 using CFBCursos.Aula23;
 using CFBCursos.Aula24;
+using CFBCursos.Aula25;
 
 namespace CursoCSharp
 {
@@ -55,7 +56,8 @@ namespace CursoCSharp
                 {"Aula 21 - Loop Do While", LoopDoWhile.Executar },
                 {"Aula 22 - Loop ForEach", LoopForEach.Executar },
                 {"Aula 23 - Métodos de Arrays", MetodosDeArray.Executar },
-                {"Aula 24 - Métodos", Metodos.Executar }
+                {"Aula 24 - Métodos", Metodos.Executar },
+                {"Aula 25 - Passagem por Valor e Por Referência",PassagemPorValorEReferencia.Executar }
 
 
             });

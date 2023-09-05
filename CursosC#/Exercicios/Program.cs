@@ -16,6 +16,7 @@ namespace CursoCSharp {
                 {"Exercício 007 - Switch", Ex007.Executar},
                 {"Exercício 008 - GoTo", Ex008.Executar},
                 {"Exercício 009 - Arrays Unidimensionais", Ex009.Executar},
+                {"Exercício 010 - Arrays Bidimensionais", Ex010.Executar},
             });
 
             central.SelecionarEExecutar();
