@@ -20,13 +20,13 @@ namespace CFBCursos.Aula25
 
         }
 
-        //passgem por valor
+        //passagem por referencia
         public static void dobrar(ref int valor)
         {
             valor *= 2;
         }
 
-        //passagem por referencia
+        //passgem por valor 
         public static void dobrar2(int valor)
         {
             valor *= 2;

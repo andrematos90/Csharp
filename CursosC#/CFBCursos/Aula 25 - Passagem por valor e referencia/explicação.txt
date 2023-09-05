@@ -1,12 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿A passagem de parâmetros por valor e por referência em C# são duas maneiras diferentes de passar argumentos para métodos ou funções, e essas duas abordagens têm diferenças significativas em relação à forma como os valores são tratados e modificados. Vamos explicar cada uma delas:
 
-namespace CFBCursos.Aula_25___Passagem_por_valor_e_referencia
+
+
+Passagem de Parâmetro por Valor:
+
+Quando você passa um parâmetro por valor, você está enviando uma cópia do valor original para o método ou função. Isso significa que qualquer alteração feita no parâmetro dentro do método não afetará o valor original fora do método.
+Isso é usado principalmente para tipos de valor, como inteiros, ponto flutuante, structs e enums.
+
+Exemplo:
+
+public void PassagemPorValor(int numero)
 {
-    class explicação
-    {
-    }
+    numero = 42; // Isso afeta apenas a cópia local de 'numero'
 }
+
+
+
+Passagem de Parâmetro por Referência:
+
+Quando você passa um parâmetro por referência, você está passando uma referência à variável original para o método ou função. Isso significa que qualquer alteração feita no parâmetro dentro do método afetará diretamente o valor original fora do método.
+Isso é usado principalmente para tipos de referência, como classes.
+Para indicar explicitamente que um parâmetro deve ser passado por referência, você usa a palavra-chave ref na definição do parâmetro.
+
+Exemplo:
+
+public void PassagemPorReferencia(ref int numero)
+{
+    numero = 42; // Isso afeta a variável original que foi passada por referência
+}
+
+
+Passagem de Parâmetro por Saída (out):
+
+Além da passagem por valor e por referência, o C# também suporta a passagem de parâmetros por saída usando a palavra-chave out. Isso é semelhante à passagem por referência, mas não requer que a variável seja inicializada antes de ser passada para o método.
+
+Exemplo:
+
+public void PassagemPorSaida(out int resultado)
+{
+    resultado = 42; // O valor é definido dentro do método e pode ser acessado fora dele
+}
+A escolha entre passagem por valor e passagem por referência depende dos requisitos do seu programa e do comportamento desejado. A passagem por valor é mais comum e segura por padrão, pois evita que os valores originais sejam inadvertidamente alterados dentro dos métodos. A passagem por referência é usada quando você precisa modificar o valor original dentro do método ou quando deseja evitar a cópia de grandes objetos na memória. A passagem por saída é usada quando você deseja que o método retorne vários valores para o chamador.
