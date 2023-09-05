@@ -1,0 +1,32 @@
+﻿O argumento params é uma característica do C# que permite que você crie métodos com um número variável de parâmetros de um determinado tipo. Isso torna mais flexível a chamada de métodos que podem aceitar diferentes quantidades de argumentos do mesmo tipo sem a necessidade de criar sobrecargas de método para cada quantidade possível de parâmetros. O parâmetro params deve ser o último parâmetro na lista de parâmetros de um método.
+
+Principais características do argumento params:
+
+Sintaxe: Para usar o params, você declara um parâmetro com a palavra-chave params, seguida pelo tipo de dado que você deseja que o método aceite como argumento. O parâmetro params deve ser um array unidimensional do tipo especificado.
+
+Número variável de argumentos: Com o params, você pode chamar o método com qualquer número de argumentos do tipo especificado, incluindo zero argumentos.
+
+Sintaxe simplificada: A sintaxe de chamada do método com o params é simplificada, pois você pode passar os argumentos diretamente, separados por vírgulas, em vez de criar manualmente um array de argumentos.
+
+Exemplo de uso do argumento params:
+
+
+public int Soma(params int[] numeros)
+{
+    int resultado = 0;
+    foreach (int numero in numeros)
+    {
+        resultado += numero;
+    }
+    return resultado;
+}
+Neste exemplo, o método Soma aceita um número variável de argumentos inteiros usando o parâmetro params int[] numeros. Você pode chamar o método Soma com zero ou mais inteiros separados por vírgulas:
+
+
+int resultado1 = Soma(1, 2, 3);      // resultado1 = 6
+int resultado2 = Soma();             // resultado2 = 0
+int resultado3 = Soma(10, 20, 30);  // resultado3 = 60
+
+Observe como a chamada do método Soma é simplificada, e você não precisa criar manualmente um array para passar os argumentos.
+
+É importante observar que você só pode ter um parâmetro params em uma lista de parâmetros de método, e ele deve ser o último parâmetro na lista, uma vez que ele aceita um número variável de argumentos. Além disso, você não é obrigado a passar nenhum argumento para um parâmetro params, como demonstrado no exemplo com Soma().
