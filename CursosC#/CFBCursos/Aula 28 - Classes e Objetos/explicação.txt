@@ -34,15 +34,17 @@ Os objetos são as entidades com as quais você trabalha em seu programa, e eles
 Exemplo de como criar e usar objetos em C#:
 
 
-Pessoa pessoa1 = new Pessoa(); // Cria um objeto da classe Pessoa
-pessoa1.Nome = "Alice";
-pessoa1.Idade = 26;
-pessoa1.Apresentar(); // Chama o método Apresentar do objeto
+Pessoa pessoa1 = new Pessoa(); // Cria outro objeto da classe Pessoa
+pessoa1.Nome = "André";
+pessoa1.Idade = 33;
+pessoa1.Apresentar();
 
-Pessoa pessoa2 = new Pessoa(); // Cria outro objeto da classe Pessoa
-pessoa2.Nome = "André";
-pessoa2.Idade = 33;
-pessoa2.Apresentar();
+
+Pessoa pessoa2 = new Pessoa(); // Cria um objeto da classe Pessoa
+pessoa2.Nome = "Alice";
+pessoa2.Idade = 26;
+pessoa2.Apresentar(); // Chama o método Apresentar do objeto
+
 
 Neste exemplo, Pessoa é uma classe que define a estrutura de objetos que representam pessoas. Criamos dois objetos, pessoa1 e pessoa2, com diferentes valores para os atributos Nome e Idade, e chamamos o método Apresentar em ambos os objetos para que eles se apresentem de acordo com seus dados individuais.
 
@@ -63,8 +65,6 @@ Nesse contexto, um objeto pode se referir a uma estrutura de dados que armazena 
 Esses objetos são frequentemente usados para representar dados sem a necessidade de criar classes personalizadas.
 
 Exemplo de objeto como estrutura de dados em C# usando um dicionário:
-
-
 
 using System;
 using System.Collections.Generic;
@@ -95,15 +95,27 @@ Portanto, em diferentes contextos de programação, a palavra "objeto" pode ter 
 
 
  Modificadores de Classe:
-public: Uma classe declarada como pública pode ser acessada de qualquer lugar, tanto dentro do mesmo assembly (projeto) quanto de outros assemblies. Geralmente, as classes públicas são usadas quando você deseja que a classe seja acessível de fora do assembly, como em bibliotecas de classes reutilizáveis.
 
-internal: Este é o modificador padrão para classes se você não especificar explicitamente um modificador. Uma classe interna só pode ser acessada a partir do mesmo assembly em que está definida. Isso é útil quando você deseja limitar o acesso a classes dentro de um assembly específico.
+ Os modificadores de classe se referem principalmente à forma como uma classe interage com outras classes, objetos e partes do código em um programa. Eles influenciam a visibilidade, a herança, a instanciabilidade e o comportamento da classe em relação ao seu ambiente.
 
-protected internal: Uma classe com este modificador pode ser acessada a partir do mesmo assembly ou de classes derivadas (herdadas) em outros assemblies. Isso é útil quando você deseja compartilhar a classe entre classes derivadas, mas não quer expor a classe fora do assembly.
+Aqui estão algumas maneiras pelas quais os modificadores de classe afetam a interação com outras partes do código:
 
-private: Classes privadas só podem ser acessadas dentro da classe em que estão definidas. Elas são usadas quando você deseja encapsular completamente uma classe e não deseja que ela seja acessível de fora da classe.
+Visibilidade: O modificador public permite que a classe seja acessível de qualquer lugar, tornando-a disponível para outras partes do código. Isso facilita a interação com objetos dessa classe a partir de outras classes ou módulos.
+
+Herança: Os modificadores abstract e sealed afetam a capacidade de outras classes herdarem da classe em questão. Uma classe abstrata serve como uma classe base que outras classes podem herdar, enquanto uma classe selada não pode ser herdada.
+
+Instanciação: O modificador static impede a instanciação de objetos da classe e permite que seus membros sejam acessados diretamente usando o nome da classe, sem a necessidade de criar instâncias.
+
+Comportamento e Reutilização de Código: Classes com diferentes modificadores podem ter comportamentos distintos e serem projetadas para serem usadas de maneiras específicas. Por exemplo, uma classe abstrata pode ser projetada para ser estendida e usada como base para outras classes, enquanto uma classe selada não pode ser estendida.
+
+Em resumo, os modificadores de classe são usados para definir a natureza e a interação de uma classe com outras partes do código, o que afeta como ela pode ser usada, herdada e manipulada em um programa. Eles desempenham um papel fundamental na organização e no design de sistemas orientados a objetos.
+
+
 
 Especificadores de Acesso (para membros de classe):
+
+Os especificadores de acesso (como public, private, protected, etc.) são utilizados para controlar como os métodos e atributos de uma classe podem ser manipulados e acessados por outras partes do código, incluindo outras classes. Eles determinam o nível de visibilidade e acesso aos membros da classe. Aqui está como eles afetam a manipulação de métodos e atributos:
+
 public: Membros (métodos, campos, propriedades, etc.) declarados como públicos podem ser acessados de qualquer lugar, tanto dentro quanto fora da classe. Eles são amplamente visíveis e acessíveis.
 
 internal: Os membros internos podem ser acessados apenas dentro do mesmo assembly, mas não fora dele.
@@ -117,3 +129,80 @@ protected internal: Este especificador combina as regras de proteção e interna
 private protected: Introduzido no C# 7.2, este especificador permite que os membros sejam acessados apenas dentro da classe que os define e em classes derivadas no mesmo assembly. Ou seja, eles são mais restritivos do que protected internal.
 
 O uso apropriado de modificadores de classe e especificadores de acesso ajuda a garantir a segurança e a organização do código, bem como a implementação adequada dos princípios de encapsulamento, herança e polimorfismo na programação orientada a objetos em C#.
+
+
+
+"esqueleto de uma classe"
+
+
+[ModificadorDaClasse] class NOME_DA_CLASSE{
+
+    atributos(variáveis/propriedades)}
+    [EspecificadorDeAcesso] tipo NOME_PROPRIEDADE;
+
+
+    //Métodos
+    [EsoecificadorDEAcessor] tipoderetorodométodo Nome_Método(parametrossehouver){
+        // corpo do método
+        }
+}
+
+
+
+
+como seria:
+
+public class MinhaClasse
+{
+    // Atributo
+    private int minhaPropriedade;
+
+    // Método
+    public int MeuMetodo(int parametro1, string parametro2)
+    {
+        // Corpo do método
+        return 0;
+    }
+}
+
+
+resumo:
+
+public: Isso define que a classe é acessível de qualquer lugar, ou seja, não há restrições de visibilidade.
+
+abstract: Uma classe abstrata é uma classe base para outras classes e não pode ser instanciada diretamente. No entanto, classes derivadas podem ser criadas a partir dela. Além disso, uma classe abstrata pode conter métodos abstratos, que são declarados, mas não têm implementação.
+
+sealed: Uma classe selada é uma classe que não pode ser herdada. Você não pode criar subclasses dela.
+
+static: Uma classe estática é uma classe que não permite instância de objetos. Geralmente, ela contém membros estáticos, como métodos e propriedades estáticos, que podem ser acessados diretamente usando o nome da classe
+
+internal: Uma classe com o modificador internal é acessível apenas dentro do mesmo assembly (unidade de compilação). Isso restringe a visibilidade da classe a um escopo mais limitado do que public.
+
+protected internal: Esse modificador combina as características de protected e internal. Ele permite que a classe seja acessada por classes derivadas (subclasses) dentro do mesmo assembly, bem como por classes derivadas em assemblies diferentes.
+
+private protected: Introduzido no C# 7.2, esse modificador é uma variação do protected internal. Ele permite que a classe seja acessada apenas por classes derivadas dentro do mesmo assembly, tornando o acesso ainda mais restrito.
+
+
+
+
+Especificadores de Acesso:
+
+public: Define que o membro (método, propriedade, campo, etc.) é acessível de qualquer lugar, não há restrições de acesso.
+
+private: Limita o acesso do membro apenas à própria classe. Os membros privados não podem ser acessados de fora da classe.
+
+protected: Permite que o membro seja acessado na própria classe e em classes derivadas (subclasses). Os membros protegidos não podem ser acessados fora da hierarquia de herança.
+
+abstract: Este especificador é mais aplicado a métodos. Um método abstrato não tem implementação na classe em que é declarado e deve ser implementado nas classes derivadas.
+
+sealed: Este especificador pode ser aplicado a métodos para indicar que o método não pode ser redefinido em classes derivadas.
+
+virtual: Este especificador é aplicado a métodos para indicar que o método pode ser redefinido (sobrescrito) em classes derivadas usando a palavra-chave override.
+
+static: Este especificador é aplicado a membros (métodos, campos, propriedades) que pertencem à classe em vez de instâncias de objetos da classe. Os membros estáticos podem ser acessados diretamente usando o nome da classe.
+
+
+
+
+
+
