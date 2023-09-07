@@ -1,0 +1,74 @@
+﻿MÉTODO CONSTRUROR
+
+Um método construtor em C# é um método especial em uma classe que é usado para inicializar objetos dessa classe. Ele é chamado automaticamente quando um novo objeto da classe é criado. Os métodos construtores têm o mesmo nome da classe e não têm um tipo de retorno explicitamente declarado.
+
+Aqui estão algumas características importantes dos métodos construtores em C#:
+
+Mesmo que não seja declarado um método construtor, a linguagem o declara automaticamente
+
+Inicialização de Objetos: O principal propósito de um método construtor é inicializar as propriedades, campos e estados iniciais de um objeto da classe. Isso garante que o objeto seja configurado corretamente desde o início.
+
+Chamada Automática: Um método construtor é chamado automaticamente quando você cria uma instância (objeto) da classe usando a palavra-chave new. Não é necessário chamá-lo explicitamente; ele é invocado no momento da criação do objeto.
+
+Sobrecarga de Construtores: Uma classe pode ter vários métodos construtores com diferentes parâmetros. Isso é conhecido como sobrecarga de construtores. Permite que você crie objetos de maneiras diferentes, dependendo das necessidades do seu programa.
+
+Aqui está um exemplo simples de uma classe com um construtor:
+
+
+public class Pessoa
+{
+    // Propriedades da classe
+    public string Nome { get; set; }
+    public int Idade { get; set; }
+
+    // Método construtor padrão
+    public Pessoa()
+    {
+        // Inicializa os valores padrão
+        Nome = "Sem Nome";
+        Idade = 0;
+    }
+
+    // Método construtor com parâmetros
+    public Pessoa(string nome, int idade)
+    {
+        // Inicializa com os valores fornecidos
+        Nome = nome;
+        Idade = idade;
+    }
+}
+Você pode criar objetos da classe Pessoa usando os construtores:
+
+
+Pessoa pessoa1 = new Pessoa(); // Usando o construtor padrão
+Pessoa pessoa2 = new Pessoa("Alice", 30); // Usando o construtor com parâmetros
+O primeiro objeto (pessoa1) é criado usando o construtor padrão, que inicializa os valores padrão. O segundo objeto (pessoa2) é criado usando o construtor com parâmetros, que permite fornecer valores específicos durante a criação do objeto.
+
+
+
+MÉTODO DESTRUTOR
+
+
+Em C#, não existe um método destrutor no sentido tradicional como em algumas outras linguagens de programação, como C++. Em vez disso, C# utiliza o conceito de "finalizadores" para realizar ações de limpeza antes que um objeto seja destruído pelo coletor de lixo (garbage collector).
+
+Um finalizador é declarado usando a notação ~NomeDaClasse(). Quando o coletor de lixo determina que um objeto não tem mais referências válidas para ele, ele chama automaticamente o finalizador (se houver) antes de liberar a memória ocupada pelo objeto. Dentro do finalizador, você pode realizar tarefas de limpeza, como fechar arquivos, liberar recursos não gerenciados, etc.
+
+Aqui está um exemplo de como declarar e usar um finalizador em uma classe:
+
+
+public class MinhaClasse
+{
+    // Construtor
+    public MinhaClasse()
+    {
+        Console.WriteLine("Objeto MinhaClasse criado.");
+    }
+
+    // Finalizador
+    ~MinhaClasse()
+    {
+        Console.WriteLine("Objeto MinhaClasse finalizado e liberando recursos.");
+        // Realize tarefas de limpeza aqui, se necessário.
+    }
+}
+Lembre-se de que os finalizadores são usados principalmente para liberar recursos não gerenciados e geralmente não são necessários em grande parte do código C#, pois o coletor de lixo lida com a maioria da gestão de memória automaticamente. Portanto, é importante usá-los com moderação e apenas quando realmente necessário. Além disso, é uma boa prática implementar a interface IDisposable para gerenciar recursos não gerenciados de maneira mais controlada.

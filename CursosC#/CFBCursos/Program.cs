@@ -28,6 +28,7 @@ using CFBCursos.Aula25;
 using CFBCursos.Aula26;
 using CFBCursos.Aula27;
 using CFBCursos.Aula28;
+using CFBCursos.Aula29;
 
 namespace CursoCSharp
 {
@@ -63,7 +64,8 @@ namespace CursoCSharp
                 {"Aula 25 - Passagem por Valor e Por Referência", PassagemPorValorEReferencia.Executar },
                 {"Aula 26 -  Argumento Out", ArgumentoOut.Executar },
                 {"Aula 27 -  Argumento Params", ArgumentoParams.Executar },
-                {"Aula 28 - Classes e Objetos", ClassesEObjetos.Executar }
+                {"Aula 28 - Classes e Objetos", ClassesEObjetos.Executar },
+                {"Aula 29 - Métodos Construtor e Destrutor", ConstrutorEDestrutor.Executar }
 
 
 
