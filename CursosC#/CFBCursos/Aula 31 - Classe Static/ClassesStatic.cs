@@ -24,7 +24,6 @@ namespace CFBCursos.Aula31
 
             }
  
-
         }
         public static void Executar()
         {
