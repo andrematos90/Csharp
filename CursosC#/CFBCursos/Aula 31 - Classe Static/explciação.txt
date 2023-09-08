@@ -1,0 +1,117 @@
+﻿Em C#, uma classe estática (ou classe static) é uma classe que não pode ser instanciada e é geralmente usada para agrupar membros e métodos relacionados a um conceito ou funcionalidade específica, sem a necessidade de criar uma instância dessa classe. As classes estáticas são declaradas com o modificador static e não podem ter instâncias, construtores de instância ou métodos de instância. Elas são frequentemente usadas para implementar funcionalidades utilitárias, matemáticas, métodos de extensão e gerenciamento de configurações, entre outros casos.
+
+Aqui estão alguns conceitos-chave relacionados a classes estáticas em C#:
+
+Membros estáticos: Uma classe estática pode conter apenas membros (campos, propriedades, métodos) estáticos. Os membros estáticos pertencem à classe em si, não a instâncias individuais da classe.
+
+Não há instâncias: Como mencionado anteriormente, você não pode criar instâncias de uma classe estática usando o operador new. Em vez disso, você acessa os membros diretamente usando o nome da classe.
+
+Acessibilidade global: Os membros estáticos de uma classe estática são acessíveis globalmente, desde que a classe em si seja acessível. Isso significa que você pode chamar os membros de uma classe estática de qualquer lugar em seu código.
+
+Aqui está um exemplo simples de uma classe estática:
+
+public static class Calculadora
+{
+    // Método estático para somar dois números
+    public static int Somar(int a, int b)
+    {
+        return a + b;
+    }
+
+    // Método estático para multiplicar dois números
+    public static int Multiplicar(int a, int b)
+    {
+        return a * b;
+    }
+}
+Neste exemplo, a classe Calculadora é estática e contém dois métodos estáticos, Somar e Multiplicar, que podem ser chamados diretamente sem criar uma instância de Calculadora. Você pode usá-los da seguinte maneira:
+
+
+int resultadoSoma = Calculadora.Somar(5, 3);          // Chama o método Somar
+int resultadoMultiplicacao = Calculadora.Multiplicar(4, 6); // Chama o método Multiplicar
+
+As classes estáticas são frequentemente usadas para fornecer funcionalidades utilitárias que não requerem estado e podem ser acessadas de forma simples e direta em todo o código. Elas também são usadas para implementar métodos de extensão, onde você pode adicionar métodos a tipos existentes sem a necessidade de herança.
+
+
+
+Uma classe não estática pode ter membros estáticos. Isso significa que você pode declarar campos, propriedades, métodos e outros membros como estáticos em uma classe que não seja estática. Os membros estáticos pertencem à classe em si, em vez de pertencerem a instâncias individuais da classe. Isso pode ser útil quando você deseja compartilhar dados ou funcionalidades comuns entre todas as instâncias da classe ou quando deseja criar funcionalidades utilitárias que não dependem do estado de uma instância específica.
+
+Aqui está um exemplo simples de uma classe não estática com membros estáticos:
+
+
+public class ExemploNaoEstatico
+{
+    public static int ContadorEstatico { get; set; }
+
+    public int ValorNaoEstatico { get; set; }
+
+    public ExemploNaoEstatico(int valor)
+    {
+        ValorNaoEstatico = valor;
+        ContadorEstatico++;
+    }
+
+    public static void MetodoEstatico()
+    {
+        Console.WriteLine("Este é um método estático.");
+    }
+}
+
+No exemplo acima, a classe ExemploNaoEstatico possui um membro estático chamado ContadorEstatico, bem como um membro não estático chamado ValorNaoEstatico. O construtor da classe (ExemploNaoEstatico) incrementa o contador estático sempre que uma nova instância da classe é criada. O método MetodoEstatico é um método estático que pode ser chamado diretamente na classe sem a necessidade de criar uma instância.
+
+Para acessar membros estáticos de uma classe, você utiliza o nome da classe, seguido de um ponto, seguido do nome do membro estático. Por exemplo:
+
+ExemploNaoEstatico.ContadorEstatico = 42; // Acessando o membro estático
+ExemploNaoEstatico.MetodoEstatico();      // Chamando o método estático
+
+Em resumo, é completamente válido ter membros estáticos em uma classe não estática em C#. Isso pode ser útil em muitos casos para compartilhar funcionalidades comuns ou manter dados compartilhados entre todas as instâncias da classe.
+
+
+
+Resumo:
+
+Se uma classe é declarada como estática (usando o modificador static na declaração da classe), todos os membros dentro dela, incluindo campos, propriedades e métodos, devem ser estáticos. Isso ocorre porque uma classe estática não pode ser instanciada, portanto, não faz sentido ter membros não estáticos dentro dela, já que não haveria instâncias de objetos para acessá-los.
+
+Por outro lado, se uma classe não é declarada como estática, você pode ter membros estáticos e não estáticos dentro dela. Isso permite que você tenha uma combinação de funcionalidades que podem ser acessadas a partir da classe em si (membros estáticos) e funcionalidades que exigem a criação de instâncias da classe (membros não estáticos).
+
+
+Classe Estática:
+
+Todos os membros (campos, propriedades, métodos) devem ser estáticos.
+Não é possível criar instâncias da classe.
+
+Classe Não Estática:
+
+Pode ter membros estáticos e não estáticos.
+Membros estáticos pertencem à classe e são compartilhados entre todas as instâncias.
+Membros não estáticos pertencem a instâncias individuais da classe e podem ser acessados após a criação de objetos.
+Portanto, a escolha de usar membros estáticos ou não estáticos em uma classe depende dos requisitos do seu design e de como você deseja que os membros se comportem em relação às instâncias da classe e à classe em si.
+
+
+
+Em uma classe estática, não é possível criar instâncias de objetos dessa classe. Portanto, os membros estáticos pertencem à classe como um todo e não estão associados a instâncias individuais. Qualquer alteração em um membro estático afetará todos os usos desse membro na classe, independentemente de onde ou como essas chamadas são feitas. Isso ocorre porque os objetos não estão envolvidos; a classe estática é uma única entidade compartilhada em toda a aplicação.
+
+Em contraste, em uma classe não estática, os membros não estáticos pertencem a instâncias individuais da classe. Cada objeto instanciado a partir dessa classe tem sua própria cópia das propriedades e campos não estáticos. Isso significa que as alterações em uma instância específica não afetarão outras instâncias da mesma classe, porque cada objeto tem seu próprio estado independente. Uma alteração na classe não afetará objetos que já foram instanciados anteriormente, a menos que você execute uma operação específica para aplicar a alteração a essas instâncias.
+
+Portanto, a principal diferença é que as classes estáticas compartilham membros em toda a aplicação e não têm instâncias, enquanto as classes não estáticas permitem a criação de instâncias, e cada instância possui seu próprio estado independente. Isso é importante ao projetar classes e escolher entre membros estáticos e não estáticos, dependendo dos requisitos específicos do seu programa.
+
+você pode acessar atributos estáticos de uma classe mesmo que a classe em si não seja declarada como estática. A natureza estática dos atributos está relacionada apenas à forma como eles são armazenados e compartilhados, e não depende do modificador de acesso da classe em si.
+
+Portanto, em uma classe não estática, você pode acessar atributos estáticos diretamente usando o nome da classe, sem a necessidade de criar uma instância da classe. Veja um exemplo:
+
+
+public class MinhaClasse
+{
+    public static int AtributoEstatico { get; set; }
+    public int AtributoNaoEstatico { get; set; }
+}
+
+// Acesso ao atributo estático sem instanciar a classe
+MinhaClasse.AtributoEstatico = 42;
+
+// Criando uma instância da classe e acessando o atributo não estático
+MinhaClasse objeto = new MinhaClasse();
+objeto.AtributoNaoEstatico = 10;
+No exemplo acima, AtributoEstatico é um atributo estático e pode ser acessado diretamente usando o nome da classe, enquanto AtributoNaoEstatico é um atributo não estático e requer a criação de uma instância da classe para acessá-lo.
+
+Portanto, é importante entender a diferença entre membros estáticos (que pertencem à classe como um todo e são acessados diretamente usando o nome da classe) e membros não estáticos (que pertencem a instâncias individuais da classe e são acessados através de objetos criados a partir da classe). Isso se aplica independentemente de a classe ser declarada como estática ou não.

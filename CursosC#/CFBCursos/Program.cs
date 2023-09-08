@@ -30,6 +30,7 @@ using CFBCursos.Aula27;
 using CFBCursos.Aula28;
 using CFBCursos.Aula29;
 using CFBCursos.Aula30;
+using CFBCursos.Aula31;
 
 namespace CursoCSharp
 {
@@ -67,9 +68,8 @@ namespace CursoCSharp
                 {"Aula 27 -  Argumento Params", ArgumentoParams.Executar },
                 {"Aula 28 - Classes e Objetos", ClassesEObjetos.Executar },
                 {"Aula 29 - Métodos Construtor e Destrutor", ConstrutorEDestrutor.Executar },
-                {"Aula 30 - SobreCarga de Métodos Construtores", SobreCargaDeMetodosConstrutores.Executar }
-
-
+                {"Aula 30 - SobreCarga de Métodos Construtores", SobreCargaDeMetodosConstrutores.Executar },
+                {"Aula 31 - Classes Static", ClassesStatic.Executar }
 
             });
 
