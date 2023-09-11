@@ -1,0 +1,80 @@
+﻿Em C#, os modificadores public e private são usados para controlar o acesso aos membros de uma classe (métodos, propriedades, campos, etc.) e determinar quais partes do código podem acessar esses membros. Aqui está a diferença entre esses dois modificadores:
+
+public:
+Os membros marcados como public são acessíveis a partir de qualquer lugar no código, tanto dentro da classe em que estão definidos quanto fora dela.
+Esses membros podem ser acessados por outras classes e objetos que têm uma referência para o objeto da classe que contém o membro público.
+São normalmente usados para expor uma interface pública de uma classe, permitindo que outros códigos a utilizem.
+
+Exemplo:
+
+
+public class MinhaClasse
+{
+    public int MeuMetodoPublico()
+    {
+        return 42;
+    }
+}
+
+
+private:
+Os membros marcados como private são acessíveis apenas dentro da classe em que estão definidos. Eles não podem ser acessados de fora da classe, mesmo se você tiver uma referência para um objeto da classe.
+São usados para encapsular o comportamento e os dados internos da classe, ocultando-os do mundo externo.
+Geralmente, métodos private são usados para implementar funcionalidades internas da classe que não precisam ser acessadas diretamente por código externo.
+
+Exemplo:
+
+public class MinhaClasse
+{
+    private int meuCampoPrivado;
+
+    private void MeuMetodoPrivado()
+    {
+        meuCampoPrivado = 10;
+    }
+
+    public void MetodoPublico()
+    {
+        // Métodos públicos podem acessar membros privados da mesma classe.
+        MeuMetodoPrivado();
+        Console.WriteLine(meuCampoPrivado);
+    }
+}
+
+Resumindo, a diferença principal entre public e private em C# é o nível de visibilidade e acessibilidade dos membros. public torna os membros acessíveis de forma ampla, enquanto private limita o acesso aos membros apenas dentro da classe em que estão definidos. Essa distinção é fundamental para o encapsulamento e o design orientado a objetos em C#.
+
+ é possível acessar e modificar membros privados de uma classe em C# usando métodos públicos chamados "getters" e "setters". Esses métodos são frequentemente usados para controlar o acesso aos campos privados de uma classe, permitindo que você defina lógica personalizada ao acessar ou definir esses campos.
+
+Aqui está um exemplo simples de como você pode fazer isso:
+
+public class MinhaClasse
+{
+    private int meuCampoPrivado;
+
+    // Getter público para acessar o campo privado.
+    public int GetMeuCampoPrivado()
+    {
+        return meuCampoPrivado;
+    }
+
+    // Setter público para definir o campo privado.
+    public void SetMeuCampoPrivado(int valor)
+    {
+        meuCampoPrivado = valor;
+    }
+}
+
+Neste exemplo, meuCampoPrivado é um campo privado da classe MinhaClasse. Os métodos GetMeuCampoPrivado e SetMeuCampoPrivado são públicos e permitem que você obtenha e defina o valor desse campo, respectivamente.
+
+Você pode usar esses métodos da seguinte maneira:
+
+MinhaClasse minhaInstancia = new MinhaClasse();
+int valor = minhaInstancia.GetMeuCampoPrivado(); // Obtém o valor do campo privado.
+minhaInstancia.SetMeuCampoPrivado(42); // Define o valor do campo privado.
+
+O uso de getters e setters permite que você adicione lógica personalizada, como validações, antes de acessar ou definir os membros privados de uma classe. Isso é útil para garantir que os dados da classe sejam manipulados de acordo com as regras de negócio específicas. Além disso, os getters e setters permitem maior controle sobre o encapsulamento de dados.
+
+
+
+
+
