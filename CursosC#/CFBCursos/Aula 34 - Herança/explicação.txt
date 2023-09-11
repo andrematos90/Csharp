@@ -1,0 +1,29 @@
+﻿A herança é um dos princípios fundamentais da programação orientada a objetos (POO) que permite que você crie uma nova classe (a classe derivada ou subclasse) com base em uma classe existente (a classe base ou superclasse). A herança permite que a classe derivada herde os membros (métodos, propriedades, campos, eventos) e comportamentos da classe base, facilitando a reutilização de código e a criação de hierarquias de classes.
+
+Aqui estão alguns conceitos-chave relacionados à herança em C#:
+
+Classe Base (Superclasse): É a classe existente da qual você deseja herdar funcionalidades. A classe base define os membros e comportamentos que podem ser compartilhados com classes derivadas.
+
+Classe Derivada (Subclasse): É a nova classe que você cria com base na classe base. A classe derivada herda os membros e comportamentos da classe base e pode adicionar novos membros ou substituir (sobrescrever) os membros herdados.
+
+Palavra-chave :, utilizada na declaração da classe derivada: Para criar uma classe derivada em C#, você usa a palavra-chave : seguida do nome da classe base. Por exemplo:
+
+
+public class ClasseBase
+{
+    // Membros e comportamentos da classe base
+}
+
+public class ClasseDerivada : ClasseBase
+{
+    // Membros e comportamentos da classe derivada
+}
+Herança de Membros: As classes derivadas herdam todos os membros públicos ou protegidos da classe base. Isso inclui métodos, propriedades, campos e eventos. Os membros privados não são herdados.
+
+Sobrescrita de Métodos: Você pode substituir (sobrescrever) os métodos herdados em uma classe derivada usando a palavra-chave override. Isso permite que você forneça uma implementação personalizada do método na classe derivada, mantendo a mesma assinatura do método na classe base.
+
+Membros Novos: Além de herdar membros da classe base, você pode adicionar novos membros à classe derivada. Esses membros são específicos da classe derivada e não existem na classe base.
+
+Construtores: A classe derivada pode chamar o construtor da classe base usando a palavra-chave base para garantir que a inicialização adequada da classe base seja feita.  EX:  public Cachorro(string nome) : base(nome)
+
+A herança é uma técnica poderosa na programação orientada a objetos, pois permite criar hierarquias de classes que refletem relacionamentos do mundo real e facilitam a reutilização de código. No entanto, é importante usar a herança com cuidado para evitar problemas de acoplamento excessivo e garantir um design de software sólido e extensível.

@@ -33,6 +33,7 @@ using CFBCursos.Aula30;
 using CFBCursos.Aula31;
 using CFBCursos.Aula32;
 using CFBCursos.Aula33;
+using CFBCursos.Aula34;
 
 namespace CursoCSharp
 {
@@ -73,7 +74,8 @@ namespace CursoCSharp
                 {"Aula 30 - SobreCarga de Métodos Construtores", SobreCargaDeMetodosConstrutores.Executar },
                 {"Aula 31 - Classes Static", ClassesStatic.Executar },
                 {"Aula 32 - This", OperadorThis.Executar },
-                {"Aula 33 - Public VS Private", PublicEPrivate.Executar }
+                {"Aula 33 - Public VS Private", PublicEPrivate.Executar },
+                {"Aula 34 - Herança", Herança.Executar }
 
             });
 
