@@ -75,7 +75,7 @@ namespace CursoCSharp
                 {"Aula 31 - Classes Static", ClassesStatic.Executar },
                 {"Aula 32 - This", OperadorThis.Executar },
                 {"Aula 33 - Public VS Private", PublicEPrivate.Executar },
-                {"Aula 34 - Herança", Herança.Executar }
+                {"Aula 34 - Herança", Herança.Executar}
 
             });
 
