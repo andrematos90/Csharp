@@ -1,12 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿Em C#, você pode chamar o construtor de uma classe base (também conhecido como construtor da classe pai) dentro do construtor de uma classe derivada usando a palavra-chave base. Isso é útil quando você herda de uma classe base e deseja inicializar os membros da classe base antes de executar qualquer lógica específica da classe derivada. Para chamar o construtor da classe base, siga estas diretrizes:
 
-namespace CFBCursos.Aula_35___Cadeia_de_Herança_e_Construtor_de_Classe
+Declare o construtor da classe derivada: Comece declarando o construtor da classe derivada usando a palavra-chave public, protected, ou internal, dependendo de quem deve ser capaz de acessar o construtor.
+
+Chame o construtor da classe base usando base: Dentro do corpo do construtor da classe derivada, use a palavra-chave base seguida por parênteses para chamar o construtor da classe base. A sintaxe geral é base(argumentos).
+
+Aqui está um exemplo simples para ilustrar como chamar o construtor da classe base em C#:
+
+
+public class ClasseBase
 {
-    class explicação
+    public ClasseBase(int parametroBase)
     {
+        // Lógica do construtor da classe base
     }
 }
+
+public class ClasseDerivada : ClasseBase
+{
+    public ClasseDerivada(int parametroBase, int parametroDerivado) : base(parametroBase)
+    {
+        // Lógica do construtor da classe derivada
+    }
+}
+Neste exemplo, a classe ClasseDerivada herda de ClasseBase. O construtor da classe derivada recebe dois parâmetros, sendo um deles relacionado à classe base. Dentro do construtor da classe derivada, base(parametroBase) é usado para chamar explicitamente o construtor da classe base e passar o parâmetro necessário.
+
+Chamar o construtor da classe base é importante para garantir que a inicialização apropriada da classe base ocorra antes da inicialização da classe derivada, ajudando a manter a consistência e a integridade dos objetos da classe.
