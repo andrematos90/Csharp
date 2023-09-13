@@ -25,3 +25,85 @@ public class ClasseDerivada : ClasseBase
 Neste exemplo, a classe ClasseDerivada herda de ClasseBase. O construtor da classe derivada recebe dois parâmetros, sendo um deles relacionado à classe base. Dentro do construtor da classe derivada, base(parametroBase) é usado para chamar explicitamente o construtor da classe base e passar o parâmetro necessário.
 
 Chamar o construtor da classe base é importante para garantir que a inicialização apropriada da classe base ocorra antes da inicialização da classe derivada, ajudando a manter a consistência e a integridade dos objetos da classe.
+
+
+
+Exemplo de hierarquia de classes
+
+
+using System;
+
+// Classe base
+class Animal
+{
+    public string Nome { get; set; }
+    public int Idade { get; set; }
+
+    public Animal(string nome, int idade)
+    {
+        Nome = nome;
+        Idade = idade;
+    }
+
+    public void EmitirSom()
+    {
+        Console.WriteLine("O animal emitiu um som.");
+    }
+}
+
+// Classe derivada de Animal
+class Mamifero : Animal
+{
+    public string TipoPelagem { get; set; }
+
+    public Mamifero(string nome, int idade, string tipoPelagem)
+        : base(nome, idade)
+    {
+        TipoPelagem = tipoPelagem;
+    }
+
+    public void Amamentar()
+    {
+        Console.WriteLine("O mamífero está amamentando.");
+    }
+}
+
+// Classe derivada de Mamifero
+class Cachorro : Mamifero
+{
+    public Cachorro(string nome, int idade, string tipoPelagem)
+        : base(nome, idade, tipoPelagem)
+    {
+    }
+
+    public void Latir()
+    {
+        Console.WriteLine("O cachorro está latindo.");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Criando uma instância da classe Cachorro
+        Cachorro cachorro = new Cachorro("Rex", 3, "Pelo curto");
+
+        // Acessando propriedades e métodos das classes base e derivadas
+        Console.WriteLine($"Nome do cachorro: {cachorro.Nome}");
+        Console.WriteLine($"Idade do cachorro: {cachorro.Idade}");
+        Console.WriteLine($"Tipo de pelagem do cachorro: {cachorro.TipoPelagem}");
+
+        cachorro.EmitirSom();
+        cachorro.Amamentar();
+        cachorro.Latir();
+    }
+}
+
+
+
+Neste exemplo, temos uma classe base Animal com propriedades comuns a todos os animais. A classe Mamifero herda de Animal e adiciona uma propriedade TipoPelagem e um método Amamentar. A classe Cachorro herda de Mamifero e não adiciona novas propriedades, mas implementa um método específico Latir.
+
+Observe que, ao criar uma instância da classe Cachorro, inicializamos os construtores das classes base usando base(nome, idade) na classe Mamifero e base(nome, idade, tipoPelagem) na classe Cachorro. Isso garante que os membros da classe base sejam inicializados corretamente quando criamos uma instância das classes derivadas.
+
+No método Main, demonstramos como criar uma instância de Cachorro e acessar suas propriedades e métodos, incluindo aqueles herdados das classes base e intermediárias.

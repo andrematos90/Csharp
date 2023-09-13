@@ -35,6 +35,7 @@ using CFBCursos.Aula32;
 using CFBCursos.Aula33;
 using CFBCursos.Aula34;
 using CFBCursos.Aula35;
+using CFBCursos.Aula36;
 
 namespace CursoCSharp
 {
@@ -77,7 +78,8 @@ namespace CursoCSharp
                 {"Aula 32 - This", OperadorThis.Executar },
                 {"Aula 33 - Public VS Private", PublicEPrivate.Executar },
                 {"Aula 34 - Herança", Herança.Executar},
-                {"Aula 35 - Cadeia de Herança e Construtor da Classe Base", CadeiaHerançaConstrutoClasseBase.Executar}
+                {"Aula 35 - Cadeia de Herança e Construtor da Classe Base", CadeiaHerançaConstrutorClasseBase.Executar},
+                 {"Aula 36 - Membros Protected", MembrosProtected.Executar}
 
             });
 
