@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CFBCursos.Aula35
 {
+
     public class Veiculo
     {
         // Campos para informações gerais de veículos

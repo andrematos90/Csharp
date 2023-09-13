@@ -15,6 +15,7 @@ public class ClasseBase
     }
 }
 
+
 public class ClasseDerivada : ClasseBase
 {
     public ClasseDerivada(int parametroBase, int parametroDerivado) : base(parametroBase)
