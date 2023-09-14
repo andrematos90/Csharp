@@ -1,0 +1,78 @@
+﻿Em C#, a ordem de execução dos construtores em uma hierarquia de classes é determinada pela cadeia de herança e pelo tipo de construtor que está sendo chamado. Os construtores são métodos especiais que são usados para inicializar objetos de uma classe e podem ter várias formas. Aqui estão algumas regras básicas para entender a ordem de execução dos construtores em C#:
+
+Construtor da classe base (superclasse):
+Quando uma classe derivada (subclasse) é instanciada, o construtor da classe base (superclasse) é sempre chamado primeiro.
+Se a classe base tiver mais de um construtor, o construtor sem parâmetros é chamado por padrão, a menos que você especifique explicitamente qual construtor deve ser chamado usando a palavra-chave base.
+Exemplo:
+
+
+class A
+{
+    public A()
+    {
+        Console.WriteLine("Construtor da classe A");
+    }
+}
+
+class B : A
+{
+    public B()
+    {
+        Console.WriteLine("Construtor da classe B");
+    }
+}
+
+Ao criar uma instância de B, o resultado será:
+
+
+Construtor da classe A
+Construtor da classe B
+Construtor da classe derivada (subclasse):
+
+Após a execução do construtor da classe base, o construtor da classe derivada (subclasse) é chamado.
+Você pode usar a palavra-chave base para chamar explicitamente um construtor específico da classe base a partir do construtor da classe derivada.
+
+Exemplo:
+
+class A
+{
+    public A()
+    {
+        Console.WriteLine("Construtor da classe A");
+    }
+}
+
+class B : A
+{
+    public B() : base()
+    {
+        Console.WriteLine("Construtor da classe B");
+    }
+}
+O resultado é o mesmo que no exemplo anterior.
+
+Construtores de inicialização:
+Você pode usar construtores de inicialização para especificar a execução de construtores específicos da classe base ou da classe derivada.
+Isso permite um controle mais preciso sobre qual construtor é chamado.
+
+Exemplo:
+
+
+class A
+{
+    public A(int x)
+    {
+        Console.WriteLine("Construtor da classe A com um parâmetro");
+    }
+}
+
+class B : A
+{
+    public B() : base(42)
+    {
+        Console.WriteLine("Construtor da classe B");
+    }
+}
+Nesse exemplo, o construtor da classe A que leva um parâmetro é explicitamente chamado a partir do construtor da classe B.
+
+Em resumo, a ordem de execução dos construtores em C# segue uma hierarquia da classe base para a classe derivada, com a possibilidade de controlar explicitamente qual construtor da classe base deve ser chamado a partir da classe derivada.
