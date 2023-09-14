@@ -1,0 +1,30 @@
+﻿Em C#, os métodos virtuais são métodos em uma classe que podem ser substituídos por métodos em classes derivadas. Isso é fundamental para a implementação do polimorfismo, um dos princípios da orientação a objetos. Quando um método é declarado como virtual em uma classe base, as classes derivadas têm a opção de fornecer sua própria implementação desse método, substituindo-o, se necessário.
+
+Aqui estão algumas características e conceitos relacionados aos métodos virtuais em C#:
+
+Método Virtual: Para marcar um método como virtual, você utiliza a palavra-chave virtual na declaração do método na classe base. Por exemplo:
+
+public virtual void MetodoVirtual()
+{
+    // Implementação do método na classe base
+}
+
+Sobrescrita (override): Uma classe derivada pode substituir um método virtual da classe base usando a palavra-chave override. Isso significa que a classe derivada fornece sua própria implementação do método. Por exemplo:
+
+public override void MetodoVirtual()
+{
+    // Implementação do método na classe derivada
+}
+
+Polimorfismo: O uso de métodos virtuais permite o polimorfismo, que é a capacidade de chamar o método apropriado da classe derivada quando uma referência à classe base é usada. Isso é especialmente útil em cenários de herança, onde várias classes derivadas podem compartilhar uma interface comum, mas implementam o comportamento de maneira diferente.
+
+Chamada do método base: Dentro de um método sobrescrito em uma classe derivada, você pode chamar a implementação do método da classe base usando a palavra-chave base. Isso é útil quando você deseja estender o comportamento da classe base, mas ainda precisa chamar a lógica do método da classe base.
+
+
+public override void MetodoVirtual()
+{
+    // Implementação adicional na classe derivada
+    base.MetodoVirtual(); // Chama o método da classe base
+}
+
+Resumidamente, os métodos virtuais em C# são uma parte fundamental da herança e do polimorfismo, permitindo que você crie hierarquias de classes que podem ser estendidas e personalizadas de forma flexível nas classes derivadas. Eles são especialmente úteis quando você deseja que diferentes classes implementem o mesmo contrato de interface, mas com comportamentos específicos para cada classe.

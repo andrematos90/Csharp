@@ -37,6 +37,7 @@ using CFBCursos.Aula34;
 using CFBCursos.Aula35;
 using CFBCursos.Aula36;
 using CFBCursos.Aula37;
+using CFBCursos.Aula38;
 
 namespace CursoCSharp
 {
@@ -82,6 +83,7 @@ namespace CursoCSharp
                 {"Aula 35 - Cadeia de Herança e Construtor da Classe Base", CadeiaHerançaConstrutorClasseBase.Executar},
                 {"Aula 36 - Membros Protected", MembrosProtected.Executar},
                 {"Aula 37 - Ordem de Exeução de Construrores", OrdemExecuçãoConstrutores.Executar },
+                {"Aula 38 - Métodos Virtuais", MétodosVirtuais.Executar },
 
             });
 
