@@ -1,0 +1,80 @@
+﻿Os acessors get e set são parte fundamental do conceito de propriedades em C# e são usados para controlar o acesso a campos privados (variáveis de instância) de uma classe. Eles permitem que você leia (get) e escreva (set) o valor desses campos de forma controlada, implementando lógica personalizada, validações ou restrições conforme necessário. Os acessors get e set são usados principalmente para expor campos privados como propriedades públicas, encapsulando o acesso a esses campos.
+
+Aqui está uma explicação mais detalhada de como eles funcionam:
+
+Accessor get:
+
+O accessor get é usado para obter (ler) o valor do campo privado de uma propriedade.
+Ele é implementado como um método sem parâmetros que retorna o valor do campo.
+O accessor get é opcional, mas é comumente usado para permitir a leitura do valor do campo.
+
+private int idade;
+
+public int Idade
+{
+    get
+    {
+        return idade; // Este é o accessor get.
+    }
+
+
+Accessor set:
+
+O accessor set é usado para definir (escrever) o valor do campo privado de uma propriedade.
+Ele é implementado como um método com um parâmetro que representa o novo valor a ser atribuído ao campo.
+O accessor set é opcional, mas é comumente usado para permitir a atribuição de valores a uma propriedade.
+
+private string nome;
+
+public string Nome
+{
+    get
+    {
+        return nome;
+    }
+    set
+    {
+        nome = value; // Este é o accessor set.
+    }
+}
+
+Uso de propriedades:
+
+Quando você declara propriedades com acessors get e set, você pode acessar essas propriedades como se fossem campos públicos, mas na verdade, os acessors estão sendo chamados.
+
+Por exemplo, para ler a propriedade Idade:
+
+int idadeDaPessoa = objetoPessoa.Idade;
+
+Para definir a propriedade Nome:
+
+objetoPessoa.Nome = "João";
+
+Validações e lógica personalizada:
+
+Você pode adicionar lógica personalizada nos acessors get e set para realizar validações ou executar ações específicas antes de ler ou escrever um valor.
+
+Por exemplo, você pode validar se a idade é maior que zero antes de atribuí-la:
+
+private int idade;
+
+public int Idade
+{
+    get
+    {
+        return idade;
+    }
+    set
+    {
+        if (value > 0)
+        {
+            idade = value;
+        }
+        else
+        {
+            Console.WriteLine("A idade deve ser maior que zero.");
+        }
+    }
+}
+
+Em resumo, os acessors get e set são usados para encapsular o acesso a campos privados por meio de propriedades públicas em C#. Eles permitem controle, validações e lógica personalizada sobre como os valores são lidos e escritos em um objeto. Isso é fundamental para o conceito de encapsulamento e fornece uma forma segura de acessar e manipular os dados de um objeto.

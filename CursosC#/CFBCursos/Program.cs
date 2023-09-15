@@ -40,6 +40,7 @@ using CFBCursos.Aula37;
 using CFBCursos.Aula38;
 using CFBCursos.Aula39;
 using CFBCursos.Aula40;
+using CFBCursos.Aula41;
 
 namespace CursoCSharp
 {
@@ -88,6 +89,7 @@ namespace CursoCSharp
                 {"Aula 38 - Métodos Virtuais", MétodosVirtuais.Executar },
                 {"Aula 39 - Classes e Métodos Abstratos", MétodosAbstratos.Executar },
                 {"Aula 40 - Classes Sealed", ClassesSealed.Executar },
+                {"Aula 41 - Acessors Get e Set", AcessorsGetESet.Executar },
 
             });
 
