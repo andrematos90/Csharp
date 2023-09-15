@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using CFBCursos.Aula01;
 //using CFBCursos.Aula02;
 using CFBCursos.Aula03;
@@ -41,6 +42,7 @@ using CFBCursos.Aula38;
 using CFBCursos.Aula39;
 using CFBCursos.Aula40;
 using CFBCursos.Aula41;
+using CFBCursos.Aula42;
 
 namespace CursoCSharp
 {
@@ -90,6 +92,7 @@ namespace CursoCSharp
                 {"Aula 39 - Classes e Métodos Abstratos", MétodosAbstratos.Executar },
                 {"Aula 40 - Classes Sealed", ClassesSealed.Executar },
                 {"Aula 41 - Acessors Get e Set", AcessorsGetESet.Executar },
+                {"Aula 42 - Indexadores de Classe", IndexadoresDeClasse.Executar },
 
             });
 
