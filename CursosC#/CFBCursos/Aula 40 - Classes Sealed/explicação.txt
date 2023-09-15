@@ -1,12 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿Em C#, uma classe selada (sealed class) é uma classe que não pode ser herdada por outras classes. Ela é usada para indicar que uma classe não deve ser estendida ou derivada. Quando você declara uma classe como selada, você está efetivamente impedindo que outras classes herdem dela.
 
-namespace CFBCursos.Aula_40___Classes_Sealed
+Aqui estão alguns pontos importantes sobre classes seladas:
+
+Declaração: Para declarar uma classe como selada, você usa a palavra-chave sealed na declaração da classe. Por exemplo:
+
+sealed class MinhaClasseSelada
 {
-    class explicação
+    // Membros da classe selada
+}
+
+Impede a herança: Quando uma classe é selada, outras classes não podem herdar dela usando a palavra-chave :, como em herança normal. Tentar herdar de uma classe selada resultará em um erro de compilação.
+
+Finalização de métodos virtuais: Além de impedir a herança, classes seladas também podem ser usadas para finalizar (sealed) métodos virtuais que foram declarados na classe base. Isso impede que as classes derivadas substituam esses métodos virtuais.
+
+class Base
+{
+    public virtual void MetodoVirtual()
     {
+        // Implementação na classe base
     }
 }
+
+sealed class Derivada : Base
+{
+    public sealed override void MetodoVirtual()
+    {
+        // Implementação na classe derivada selada
+    }
+}
+
+Neste exemplo, o método MetodoVirtual na classe Derivada está selado, o que significa que nenhuma classe derivada de Derivada pode substituir esse método novamente.
+
+Uso apropriado: Classes seladas são úteis quando você tem uma classe que representa um conceito completo e finalizado, e não deseja que outras classes estendam ou modifiquem seu comportamento. Isso é comum em bibliotecas ou estruturas onde você deseja evitar a criação acidental de subclasses que podem quebrar a funcionalidade original.
+
+Performance: O uso de classes seladas também pode ter benefícios de desempenho em alguns casos, já que o compilador pode otimizar o código de forma mais eficiente, sabendo que não há herança envolvida.
+
+Em resumo, classes seladas são usadas para fornecer um grau de segurança e finalização no design de classes, impedindo que outras classes herdem ou modifiquem seu comportamento. Elas são úteis em cenários onde você deseja proteger a integridade de uma classe ou fornecer uma implementação final de um conceito.
