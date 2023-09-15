@@ -38,6 +38,8 @@ using CFBCursos.Aula35;
 using CFBCursos.Aula36;
 using CFBCursos.Aula37;
 using CFBCursos.Aula38;
+using CFBCursos.Aula39;
+using CFBCursos.Aula40;
 
 namespace CursoCSharp
 {
@@ -84,6 +86,8 @@ namespace CursoCSharp
                 {"Aula 36 - Membros Protected", MembrosProtected.Executar},
                 {"Aula 37 - Ordem de Exeução de Construrores", OrdemExecuçãoConstrutores.Executar },
                 {"Aula 38 - Métodos Virtuais", MétodosVirtuais.Executar },
+                {"Aula 39 - Classes e Métodos Abstratos", MétodosAbstratos.Executar },
+                {"Aula 40 - Classes Sealed", ClassesSealed.Executar },
 
             });
 

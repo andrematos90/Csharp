@@ -1,0 +1,93 @@
+﻿Em C#, um método abstrato é um método declarado em uma classe abstrata que não possui uma implementação concreta na classe onde é declarado. Em vez disso, ele serve como um contrato que obriga as classes derivadas (subclasses) a fornecerem uma implementação concreta para esse método. Isso é útil quando você deseja criar uma estrutura hierárquica de classes onde cada classe derivada fornece uma implementação específica de um método, mas a classe base não pode fornecer uma implementação significativa.
+
+Aqui está como você declara e usa métodos abstratos em C#:
+
+Declaração de um método abstrato:
+Para declarar um método abstrato, você deve primeiro criar uma classe abstrata usando o modificador abstract, e em seguida, declarar o método abstrato usando o modificador abstract também. Aqui está um exemplo de declaração de classe abstrata com um método abstrato:
+
+
+public abstract class Animal
+{
+    public abstract void EmitSound();
+}
+
+Neste exemplo, a classe Animal é abstrata e possui um método abstrato chamado EmitSound.
+
+Implementação nas classes derivadas:
+As classes que herdam da classe abstrata devem fornecer uma implementação concreta para todos os métodos abstratos da classe base. Caso contrário, essas classes também precisam ser declaradas como abstratas. Veja um exemplo de uma classe derivada que implementa o método abstrato EmitSound:
+
+
+public class Dog : Animal
+{
+    public override void EmitSound()
+    {
+        Console.WriteLine("Woof!");
+    }
+}
+A classe Dog herda da classe Animal e fornece uma implementação concreta para o método EmitSound.
+
+Uso de métodos abstratos:
+Agora você pode criar instâncias das classes derivadas e chamar o método abstrato como qualquer outro método:
+
+Animal myAnimal = new Dog();
+myAnimal.EmitSound(); // Isso imprimirá "Woof!" no console.
+Observe que, embora a referência seja do tipo Animal, o método EmitSound da classe Dog é chamado devido à substituição (override) na classe derivada.
+
+Métodos abstratos são úteis para definir uma estrutura de herança que garante que todas as classes derivadas forneçam uma implementação específica para determinados métodos, garantindo assim a consistência do comportamento em todas as classes derivadas.
+
+
+Uma classe abstrata pode ter métodos não abstratos (também conhecidos como métodos concretos). Uma classe abstrata é uma classe que pode conter uma mistura de métodos abstratos (métodos que não têm implementação na classe base) e métodos concretos (métodos que têm implementações reais). Aqui está um exemplo de uma classe abstrata com métodos não abstratos:
+
+
+public abstract class Animal
+{
+    public string Name { get; set; }
+
+    // Método abstrato
+    public abstract void MakeSound();
+
+    // Método não abstrato
+    public void Eat()
+    {
+        Console.WriteLine($"{Name} is eating.");
+    }
+}
+
+Neste exemplo, a classe Animal é abstrata e possui um método abstrato chamado MakeSound e um método não abstrato chamado Eat. A classe Animal pode ser usada como uma classe base para outras classes que herdem dela. As classes derivadas devem fornecer uma implementação para o método abstrato MakeSound, mas podem usar diretamente o método não abstrato Eat sem precisar fornecer uma implementação adicional, a menos que queiram substituí-lo (usando a palavra-chave override).
+
+Em resumo, uma classe abstrata pode conter qualquer combinação de métodos abstratos e métodos não abstratos, dependendo das necessidades de design da hierarquia de classes. Os métodos não abstratos fornecem implementações padrão que podem ser usadas por todas as classes derivadas, enquanto os métodos abstratos obrigam as classes derivadas a fornecerem implementações específicas.
+
+
+
+
+INSTÂNCIAÇÃO DE OBJETOS
+
+Uma classe abstrata não pode ser instanciada diretamente para criar objetos. Você pode criar objetos apenas a partir de classes concretas, ou seja, classes que não são abstratas. O propósito principal de uma classe abstrata é servir como uma classe base para outras classes (concretas ou abstratas) e definir um contrato com métodos abstratos que as classes derivadas devem implementar.
+
+Por exemplo, considere a seguinte classe abstrata Animal:
+
+public abstract class Animal
+{
+    public abstract void MakeSound();
+}
+
+Você não pode criar uma instância direta de Animal da seguinte forma:
+
+Animal myAnimal = new Animal(); // Isso resultará em um erro de compilação.
+No entanto, você pode criar objetos de classes derivadas que implementam os métodos abstratos da classe abstrata:
+
+public class Dog : Animal
+{
+    public override void MakeSound()
+    {
+        Console.WriteLine("Woof!");
+    }
+}
+
+// Criando uma instância de Dog
+Animal myDog = new Dog();
+myDog.MakeSound(); // Isso chamará o método MakeSound de Dog.
+
+Neste exemplo, você cria uma instância de Dog, que é uma classe derivada de Animal, e pode chamar o método MakeSound da instância myDog.
+
+Portanto, a classe abstrata serve como um ponto de partida para criar classes derivadas que podem ser instancia
