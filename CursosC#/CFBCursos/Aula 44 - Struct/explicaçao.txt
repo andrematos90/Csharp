@@ -30,3 +30,7 @@ Imutabilidade: É uma prática comum que os structs sejam imutáveis, ou seja, s
 Limitações: Devido à sua natureza de valor, os structs são mais adequados para tipos pequenos e simples que não precisam de recursos como herança ou gerenciamento de memória complexo. Eles são úteis quando você deseja uma estrutura leve para armazenar dados, como coordenadas, datas, cores, etc.
 
 Em resumo, os structs em C# são usados para criar tipos de valor eficientes e leves que são copiados por valor, ideais para armazenar pequenas quantidades de dados. Eles são uma alternativa às classes quando você precisa de tipos imutáveis e com baixo overhead de memória.
+
+Em C#, os objetos não são instanciados de structs. Na verdade, os structs são tipos de valor, não tipos de referência como as classes, e eles são tratados de maneira diferente em relação à alocação de memória e ao armazenamento de dados.
+
+a sintaxe para a instanciação de um struct é muito semelhante à sintaxe para a instanciação de um objeto de uma classe. Em ambas as situações, você usa a palavra-chave new seguida do nome do tipo (seja o nome de um struct ou o nome de uma classe) para criar uma instância.
