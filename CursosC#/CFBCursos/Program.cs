@@ -44,6 +44,7 @@ using CFBCursos.Aula40;
 using CFBCursos.Aula41;
 using CFBCursos.Aula42;
 using CFBCursos.Aula43;
+using CFBCursos.Aula44;
 
 namespace CursoCSharp
 {
@@ -95,6 +96,7 @@ namespace CursoCSharp
                 {"Aula 41 - Acessors Get e Set", AcessorsGetESet.Executar },
                 {"Aula 42 - Indexadores de Classe", IndexadoresDeClasse.Executar },
                 {"Aula 43 - Interfaces", Interfaces.Executar },
+                {"Aula 44 - Struct", Struct.Executar },
 
             });
 

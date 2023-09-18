@@ -1,0 +1,32 @@
+﻿Em C#, struct é uma estrutura de dados que permite que você crie tipos de valor leves para armazenar um pequeno número de campos relacionados. A principal característica de um struct é que ele é um tipo de valor, o que significa que as instâncias de struct são copiadas quando atribuídas ou passadas como parâmetros, ao contrário dos tipos de referência (como classes), que são manipulados por referência.
+
+Aqui estão alguns pontos importantes sobre structs em C#:
+
+Declaração de Struct: Para declarar um struct, você usa a palavra-chave struct seguida pelo nome do struct e a definição de seus campos. Por exemplo:
+
+
+public struct Ponto
+{
+    public int X;
+    public int Y;
+}
+
+Membros de Struct: Os structs podem conter campos, propriedades, métodos e construtores, semelhantes às classes, mas eles não podem conter destrutores. Os membros de um struct são implicitamente públicos.
+
+Sem Referência: Ao contrário das classes, os structs não são alocados na heap, mas sim na stack ou inline em outros tipos. Isso os torna mais eficientes em termos de memória e mais rápidos para criar e destruir.
+
+Cópia de Valor: Quando você atribui um struct a outra variável ou passa um struct como argumento para um método, uma cópia completa dos dados é feita. Isso pode afetar o desempenho e o comportamento em comparação com as classes, que são tipos de referência e compartilham os mesmos dados na memória.
+
+Inicialização de Structs: Você pode criar uma instância de um struct usando o operador new ou simplesmente declarando-a sem new. No entanto, o operador new não é necessário para criar uma instância de um struct.
+
+
+Ponto ponto1 = new Ponto();
+Ponto ponto2; // Criação sem 'new'
+
+Valor Padrão: Os structs têm um valor padrão, que é uma instância do struct onde todos os campos são inicializados com seus valores padrão (zero para tipos numéricos, null para referências, etc.).
+
+Imutabilidade: É uma prática comum que os structs sejam imutáveis, ou seja, seus campos não podem ser modificados após a criação. Isso ajuda a evitar efeitos colaterais indesejados.
+
+Limitações: Devido à sua natureza de valor, os structs são mais adequados para tipos pequenos e simples que não precisam de recursos como herança ou gerenciamento de memória complexo. Eles são úteis quando você deseja uma estrutura leve para armazenar dados, como coordenadas, datas, cores, etc.
+
+Em resumo, os structs em C# são usados para criar tipos de valor eficientes e leves que são copiados por valor, ideais para armazenar pequenas quantidades de dados. Eles são uma alternativa às classes quando você precisa de tipos imutáveis e com baixo overhead de memória.
