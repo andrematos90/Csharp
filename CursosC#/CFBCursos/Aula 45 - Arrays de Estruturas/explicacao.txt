@@ -1,0 +1,36 @@
+﻿Arrays de structs em C# são usados para armazenar uma coleção de valores do tipo struct em uma estrutura de dados indexada. Assim como os arrays de outros tipos de dados, os arrays de structs permitem que você armazene múltiplos valores do mesmo tipo em uma única variável. No entanto, os elementos de um array de structs são tipos de valor, o que significa que cada elemento é uma cópia independente do struct.
+
+Aqui estão algumas características importantes dos arrays de structs:
+
+Declaração de Array de Structs: Para declarar um array de structs, você usa a sintaxe NomeDoStruct[] NomeDoArray. Por exemplo:
+
+// Declaração de um array de structs
+MinhaStruct[] meuArray;
+
+Criação de um Array de Structs: Para criar um array de structs, você precisa alocar memória para ele usando a palavra-chave new e especificando o tamanho do array:
+
+meuArray = new MinhaStruct[10]; // Cria um array de 10 elementos do tipo MinhaStruct
+
+Acesso a Elementos: Você pode acessar elementos individuais do array usando um índice entre colchetes. Por exemplo:
+
+meuArray[0] = new MinhaStruct(); // Atribui um novo valor ao primeiro elemento do array
+MinhaStruct valor = meuArray[1]; // Lê o valor do segundo elemento do array
+
+Iteração em um Array de Structs: Você pode usar loops (como for ou foreach) para iterar pelos elementos de um array de structs, similarmente ao que faria com outros tipos de arrays.
+
+foreach (MinhaStruct item in meuArray)
+{
+    // Faça algo com cada elemento do array
+}
+
+Cópia por Valor: É importante notar que, como os structs são tipos de valor, quando você atribui um elemento de um array de structs a outra variável, uma cópia do valor é feita. Isso significa que as alterações feitas em uma cópia não afetam o valor original no array.
+
+Desempenho: Os arrays de structs tendem a ter melhor desempenho do que os arrays de objetos (ou seja, arrays de classes) em cenários onde você está lidando com um grande número de elementos, pois os structs são armazenados inline na memória e não exigem alocação adicional na heap.
+
+Limitações: Embora os arrays de structs tenham algumas vantagens em termos de desempenho e alocação de memória, eles podem não ser adequados para todos os cenários. Por exemplo, se você precisa de uma coleção mutável onde os elementos podem ser alterados com frequência, os arrays de class (ou outras estruturas de dados, como listas) podem ser mais apropriados.
+
+Em resumo, os arrays de structs em C# são usados para armazenar coleções de tipos de valor em uma estrutura de dados indexada. Eles oferecem benefícios de desempenho e eficiência de memória em comparação com os arrays de objetos, mas é importante entender as diferenças entre tipos de valor e tipos de referência ao trabalhar com eles.
+
+
+
+
