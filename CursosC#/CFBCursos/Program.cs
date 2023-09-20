@@ -46,6 +46,7 @@ using CFBCursos.Aula42;
 using CFBCursos.Aula43;
 using CFBCursos.Aula44;
 using CFBCursos.Aula45;
+using CFBCursos.Aula46;
 
 
 namespace CursoCSharp
@@ -100,6 +101,7 @@ namespace CursoCSharp
                 {"Aula 43 - Interfaces", Interfaces.Executar },
                 {"Aula 44 - Struct", Struct.Executar },
                 {"Aula 45 - Arrays de Estruturas", ArraysDeEstruturas.Executar },
+                {"Aula 45 - Métodos que Retornam Objetos",  MetodosQueRetornamObjetos.Executar },
 
             });
 
