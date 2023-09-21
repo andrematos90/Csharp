@@ -1,0 +1,27 @@
+﻿A sobrecarga de métodos em C# é um conceito que permite que você defina múltiplas versões de um método em uma classe com o mesmo nome, mas com diferentes parâmetros. Isso significa que você pode ter diversos métodos com o mesmo nome em uma classe, desde que eles tenham assinaturas de parâmetros diferentes. A assinatura de um método é definida pelo tipo, número e ordem dos parâmetros em sua lista de parâmetros.
+
+A sobrecarga de métodos é útil quando você deseja que métodos com funcionalidades semelhantes tenham nomes consistentes, facilitando o uso e a compreensão do código. Por exemplo, você pode ter um método chamado "Calcular" em uma classe que realiza operações diferentes com base nos parâmetros fornecidos. Aqui está um exemplo simples:
+
+
+public class Calculadora
+{
+    public int Calcular(int a, int b)
+    {
+        return a + b;
+    }
+
+    public double Calcular(double a, double b)
+    {
+        return a * b;
+    }
+}
+
+Neste exemplo, a classe Calculadora tem dois métodos chamados "Calcular", um que aceita dois inteiros e retorna sua soma, e outro que aceita dois números de ponto flutuante e retorna sua multiplicação. Eles têm assinaturas de parâmetros diferentes, o que permite ao compilador diferenciá-los e chamar o método correto com base nos argumentos passados.
+
+Ao chamar esses métodos, o C# determinará qual versão do método usar com base nos tipos dos argumentos passados:
+
+Calculadora calculadora = new Calculadora();
+int soma = calculadora.Calcular(3, 5);       // Chama o primeiro método
+double multiplicacao = calculadora.Calcular(2.5, 4.0); // Chama o segundo método
+
+A sobrecarga de métodos é uma técnica poderosa para tornar seu código mais flexível e legível, permitindo que você forneça diferentes funcionalidades para métodos com nomes consistentes.
