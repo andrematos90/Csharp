@@ -49,6 +49,7 @@ using CFBCursos.Aula45;
 using CFBCursos.Aula46;
 using CFBCursos.Aula47;
 using CFBCursos.Aula48;
+using CFBCursos.Aula49;
 
 
 namespace CursoCSharp
@@ -106,6 +107,7 @@ namespace CursoCSharp
                 {"Aula 46 - Métodos que Retornam Objetos",  MetodosQueRetornamObjetos.Executar },
                 {"Aula 47 - Sobrecarga de Métodos",  SobrecargaDeMetodos.Executar },
                 {"Aula 48 - Recursividade",  Recursividade.Executar },
+                {"Aula 49 - Métodos e Váriaveis Estáticos", MetodosEVariaveisEstaticos.Executar },
 
             });
 
