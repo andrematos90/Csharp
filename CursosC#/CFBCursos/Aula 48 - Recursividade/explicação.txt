@@ -1,0 +1,25 @@
+﻿A recursividade em C# (e em muitas outras linguagens de programação) é um conceito em que uma função ou método chama a si mesmo para resolver um problema de forma iterativa. Isso significa que uma função recursiva é uma função que se divide em casos menores e mais simples do mesmo problema até alcançar um caso base em que a chamada recursiva não é mais necessária. A recursividade é amplamente utilizada para resolver problemas que podem ser divididos em subproblemas idênticos ou semelhantes.
+
+Principais características da recursividade em C#:
+
+Caso Base: Toda função recursiva deve ter um caso base. O caso base é a condição em que a função para de chamar a si mesma e retorna um valor específico. Isso evita que a recursão continue indefinidamente.
+
+Chamada Recursiva: A função recursiva chama a si mesma com argumentos modificados de forma que cada chamada recursiva resolva um subproblema menor do problema original.
+
+Aqui está um exemplo simples de uma função recursiva que calcula o fatorial de um número em C#:
+
+public static int Fatorial(int n)
+{
+    // Caso Base: Se n for igual a 0, o fatorial é 1.
+    if (n == 0)
+        return 1;
+    
+    // Chamada Recursiva: O fatorial de n é n multiplicado pelo fatorial de (n-1).
+    return n * Fatorial(n - 1);
+}
+
+Neste exemplo, a função Fatorial chama a si mesma com um valor menor a cada chamada recursiva até atingir o caso base (quando n é igual a 0). A cada chamada recursiva, o fatorial é multiplicado pelo valor de n atual.
+
+É importante ter cuidado ao usar recursividade, pois ela pode levar a problemas de estouro de pilha (stack overflow) se não for controlada corretamente. Certifique-se de que o caso base seja alcançado e que a recursão eventualmente se aproxime do caso base para evitar esse problema.
+
+A recursividade é uma ferramenta poderosa, mas também requer atenção à lógica de parada e ao desempenho para garantir que seja usada de maneira eficiente e segura.
