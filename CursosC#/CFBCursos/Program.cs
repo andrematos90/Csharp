@@ -52,6 +52,7 @@ using CFBCursos.Aula48;
 using CFBCursos.Aula49;
 using CFBCursos.Aula50;
 using CFBCursos.Aula51;
+using CFBCursos.Aula52;
 
 
 namespace CursoCSharp
@@ -112,6 +113,8 @@ namespace CursoCSharp
                 {"Aula 49 - Métodos e Váriaveis Estáticos", MetodosEVariaveisEstaticos.Executar },
                 {"Aula 50 - Delegates", Delegates.Executar },
                 {"Aula 51 - Argumentos de Entrada do Programa", ArgumentosDeEntradaDoPrograma.Executar },
+                {"Aula 52 - Try Catch Finally", TryCatchFinally.Executar },
+
 
 
             });
