@@ -10,6 +10,7 @@ namespace CFBCursos.Aula51
     {
         public static void Executar()
         {
+            Console.WriteLine("Ola mundo!");
 
         }
     }

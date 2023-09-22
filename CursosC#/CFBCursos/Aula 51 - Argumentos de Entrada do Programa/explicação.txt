@@ -1,0 +1,32 @@
+﻿Em C#, os argumentos de entrada de um programa referem-se aos valores que podem ser fornecidos quando você executa o programa a partir da linha de comando ou de outro ambiente de execução. Esses argumentos são frequentemente usados para passar informações ou configurações para o programa enquanto ele está sendo executado.
+
+Os argumentos de entrada são armazenados em um array de strings chamado string[] args que é passado como parâmetro para o método Main da classe que contém o ponto de entrada do programa. O método Main é o ponto de partida para a execução de um programa C# e tem a seguinte assinatura:
+
+
+static void Main(string[] args)
+Aqui estão alguns conceitos importantes relacionados aos argumentos de entrada do programa em C#:
+
+Acesso aos Argumentos de Entrada: Os argumentos de entrada são armazenados no array args. Você pode acessar esses argumentos usando a notação de índice, onde args[0] é o primeiro argumento, args[1] é o segundo argumento e assim por diante. O tamanho do array args depende do número de argumentos passados quando o programa é executado.
+
+Exemplo de Uso: Suponha que você tenha um programa chamado MeuPrograma.exe e deseja passar dois argumentos ao executá-lo:
+
+MeuPrograma.exe argumento1 argumento2
+Dentro do método Main, você pode acessar esses argumentos da seguinte forma:
+
+]
+static void Main(string[] args)
+{
+    string argumento1 = args[0];
+    string argumento2 = args[1];
+
+    Console.WriteLine($"Primeiro argumento: {argumento1}");
+    Console.WriteLine($"Segundo argumento: {argumento2}");
+}
+
+Manipulação de Argumentos de Linha de Comando: Os argumentos de linha de comando podem ser usados para controlar o comportamento do programa. Por exemplo, você pode passar nomes de arquivos, opções de configuração, informações de depuração e assim por diante. É comum em aplicativos de linha de comando e scripts.
+
+Tratamento de Argumentos: Ao trabalhar com argumentos de entrada, é importante validar e tratar esses argumentos adequadamente para evitar erros e exceções. Você deve verificar se o número esperado de argumentos foi fornecido e lidar com casos de argumentos inválidos ou ausentes.
+
+Bibliotecas de Análise de Argumentos: Para aplicativos mais complexos que exigem um processamento avançado de argumentos de linha de comando, você pode considerar o uso de bibliotecas de análise de argumentos, como o CommandLineParser, que facilitam a análise e o tratamento de argumentos.
+
+Em resumo, os argumentos de entrada em C# são uma maneira flexível de passar informações para um programa quando ele é executado a partir da linha de comando ou de outro ambiente de execução. Eles são frequentemente usados para personalizar o comportamento do programa e são acessados através do array args no método Main.
