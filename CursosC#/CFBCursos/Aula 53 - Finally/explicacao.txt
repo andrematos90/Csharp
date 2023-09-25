@@ -1,0 +1,38 @@
+﻿Em C#, finally e throw new são construções que desempenham papéis diferentes em relação ao tratamento de exceções.
+
+finally:
+O bloco finally é usado em conjunto com o bloco try-catch para garantir que um conjunto específico de código seja executado, independentemente de ocorrer ou não uma exceção. É frequentemente usado para liberar recursos, como fechar arquivos, conexões de banco de dados ou realizar operações de limpeza. Aqui está um exemplo de como é usado:
+
+
+try
+{
+    // Código que pode gerar exceções
+}
+catch (Exception ex)
+{
+    // Tratamento da exceção
+}
+finally
+{
+    // Código que será executado independentemente de haver uma exceção ou não
+}
+
+O bloco finally é opcional, mas, quando presente, garante que o código dentro dele será executado, mesmo se uma exceção for lançada.
+
+throw new:
+A instrução throw é usada para lançar exceções em C#. A palavra-chave throw é seguida pela palavra-chave new e, em seguida, a instância da exceção a ser lançada. Isso é frequentemente usado no bloco catch para relançar exceções após algum tratamento personalizado. Aqui está um exemplo:
+
+
+try
+{
+    // Código que pode gerar exceções
+}
+catch (CustomException ex)
+{
+    // Tratamento da exceção
+    throw new AnotherException("Ocorreu outro erro.", ex);
+}
+
+Neste exemplo, estamos capturando uma exceção CustomException, realizando algum tratamento e, em seguida, lançando uma nova exceção AnotherException com uma mensagem personalizada e a exceção original (ex) como uma exceção interna.
+
+Ambas as construções são úteis no tratamento de exceções em C# para garantir que seu código seja robusto e possa lidar com situações excepcionais de maneira controlada. O bloco try-catch-finally permite controlar o fluxo de exceções, enquanto throw new permite personalizar exceções e passar informações específicas sobre o erro.
