@@ -55,6 +55,7 @@ using CFBCursos.Aula51;
 using CFBCursos.Aula52;
 using CFBCursos.Aula53;
 using CFBCursos.Aula54;
+using CFBCursos.Aula55;
 
 
 namespace CursoCSharp
@@ -118,6 +119,7 @@ namespace CursoCSharp
                 {"Aula 52 - Try Catch Finally -  parte 1", TryCatchFinally.Executar },
                 {"Aula 53 - Try Catch Finally - parte 2", Finally.Executar },
                 {"Aula 54 - NameSpcaces", NameSpaces.Executar },
+                {"Aula 55 - Dictionary", ColecaoDictionary.Executar },
 
 
 

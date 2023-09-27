@@ -1,0 +1,60 @@
+﻿Um Dictionary em C# é uma coleção que permite armazenar pares chave-valor, onde cada chave é exclusiva. Isso significa que, em um dicionário, você pode associar um valor a uma chave e, posteriormente, recuperar o valor com base na chave. É uma estrutura de dados extremamente útil quando você precisa associar informações relacionadas e recuperá-las eficientemente.
+
+Aqui estão algumas características e informações importantes sobre Dictionary em C#:
+
+Estrutura de Dados Genérica: O Dictionary é uma coleção genérica, o que significa que você pode especificar o tipo de dados tanto para as chaves quanto para os valores que ele irá conter.
+
+Chaves Únicas: Cada chave no dicionário deve ser única. Isso significa que você não pode ter duas entradas com a mesma chave no mesmo dicionário.
+
+Eficiência na Recuperação: Os dicionários são otimizados para a recuperação de valores com base nas chaves. Isso ocorre porque eles usam uma estrutura interna que permite uma busca eficiente. Portanto, eles são ideais para casos em que você precisa associar dados e, em seguida, recuperá-los rapidamente.
+
+Não Ordenado: Os dicionários não mantêm a ordem das chaves e valores da mesma forma que, por exemplo, uma lista. Isso significa que os elementos não estão garantidos para serem iterados na ordem em que foram inseridos.
+
+Métodos Principais:
+
+Add(key, value): Adiciona um par chave-valor ao dicionário.
+Remove(key): Remove uma entrada com a chave especificada.
+TryGetValue(key, out value): Tenta obter o valor associado à chave especificada, retornando true se a chave existir e false caso contrário.
+ContainsKey(key): Verifica se o dicionário contém a chave especificada.
+Keys: Propriedade que retorna uma coleção de todas as chaves no dicionário.
+Values: Propriedade que retorna uma coleção de todos os valores no dicionário.
+Aqui está um exemplo de uso de um Dictionary em C#:
+
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        // Criando um Dictionary que associa nomes a idades.
+        Dictionary<string, int> ages = new Dictionary<string, int>();
+
+        // Adicionando pares chave-valor ao dicionário.
+        ages.Add("Alice", 30);
+        ages.Add("André", 36);
+      
+
+        // Recuperando valores com base nas chaves.
+        int AndreAge;
+        if (ages.TryGetValue("André", out bobAge))
+        {
+            Console.WriteLine("A idade de André é: " + AndréAge);
+        }
+        else
+        {
+            Console.WriteLine("André não encontrado no dicionário.");
+        }
+
+        // Iterando pelas chaves e valores.
+        foreach (var key in ages.Keys)
+        {
+            int value = ages[key];
+            Console.WriteLine(key + ": " + value);
+        }
+    }
+}
+
+Neste exemplo, um Dictionary é usado para associar nomes a idades e, em seguida, recuperar a idade de "André" com base em sua chave. Os pares chave-valor são adicionados usando o método Add, e as chaves são verificadas usando o método TryGetValue. A iteração pelas chaves e valores também é demonstrada.
+
+Os Dictionary são uma ferramenta poderosa para muitos cenários de programação onde você precisa armazenar e recuperar dados de forma eficiente com base em uma chave única.
