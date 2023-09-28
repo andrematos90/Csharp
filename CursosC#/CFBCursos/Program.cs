@@ -57,6 +57,7 @@ using CFBCursos.Aula53;
 using CFBCursos.Aula54;
 using CFBCursos.Aula55;
 using CFBCursos.Aula56;
+using CFBCursos.Aula57;
 
 namespace CursoCSharp
 {
@@ -121,6 +122,7 @@ namespace CursoCSharp
                 {"Aula 54 - NameSpcaces", NameSpaces.Executar },
                 {"Aula 55 - Coleção Dictionary", ColecaoDictionary.Executar },
                 {"Aula 56 - Coleção LinkedList", ColecaoLinkedList.Executar },
+                {"Aula 57 - Coleção List", ColecaoList.Executar },
 
 
 

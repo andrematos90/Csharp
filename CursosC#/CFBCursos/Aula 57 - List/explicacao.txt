@@ -1,0 +1,45 @@
+﻿Em C#, uma List é uma coleção genérica que faz parte do namespace System.Collections.Generic. Ela é uma estrutura de dados que representa uma lista dinâmica de elementos do mesmo tipo. As List em C# são muito flexíveis, permitindo a adição, remoção e manipulação de elementos de forma eficiente.
+
+Aqui estão algumas características importantes das List em C#:
+
+Tipos Genéricos: List é genérica, o que significa que você deve especificar o tipo de elementos que a lista vai armazenar quando a cria. Por exemplo, você pode criar uma List de inteiros (int), de strings (string) ou de qualquer outro tipo de objeto.
+
+Exemplo de declaração de uma List de inteiros:
+
+List<int> numeros = new List<int>();
+
+Dinâmica: As List têm tamanho dinâmico, o que significa que você pode adicionar ou remover elementos conforme necessário sem especificar o tamanho da lista antecipadamente. Elas crescem ou diminuem automaticamente conforme os elementos são adicionados ou removidos.
+
+Operações de Adição e Remoção: Você pode adicionar elementos a uma List usando o método Add, que insere o elemento no final da lista. Você também pode remover elementos usando métodos como Remove, RemoveAt, RemoveRange, entre outros.
+
+Exemplo de adição e remoção de elementos:
+
+List<string> nomes = new List<string>();
+
+nomes.Add("Alice");
+nomes.Add("André");
+nomes.Remove("Alice");
+
+Acesso por Índice: Você pode acessar elementos em uma List por índice usando a notação de colchetes, assim como em arrays.
+
+Exemplo de acesso por índice:
+
+string primeiroNome = nomes[0];
+
+Propriedades Úteis: As List oferecem propriedades úteis, como Count, que retorna o número de elementos na lista, e Capacity, que retorna a capacidade atual da lista. A capacidade geralmente é maior do que o número de elementos para acomodar adições futuras com menos realocações de memória.
+
+Exemplo de uso das propriedades:
+
+int totalElementos = nomes.Count;
+int capacidadeAtual = nomes.Capacity;
+
+Iteração: Você pode percorrer os elementos de uma List usando loops, como foreach, for, ou até mesmo LINQ para realizar operações de consulta.
+
+Exemplo de iteração com foreach:
+
+foreach (string nome in nomes)
+{
+    Console.WriteLine(nome);
+}
+
+As List em C# são uma escolha comum para armazenar coleções de dados em muitos cenários, devido à sua flexibilidade e desempenho. Elas são parte integrante da biblioteca padrão do C# e são amplamente utilizadas em desenvolvimento de software.
