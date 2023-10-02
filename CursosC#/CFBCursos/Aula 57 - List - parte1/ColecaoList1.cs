@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CFBCursos.Aula57
 {
-    class ColecaoList
+    class ColecaoList1
     {
         public static void Executar()
         {
